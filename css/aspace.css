@@ -12,3 +12,18 @@
 .searchterm2 {
 	background-color: #f8d6f7;
 }
+.facets h2 {
+	font-size: 2em;
+}
+.facets h3 {
+	font-size: 1.2em;
+	border-bottom: 1px solid;
+}
+.facets h4 {
+	font-size: 1em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.facets p {
+	font-size: 0.9em;
+}
