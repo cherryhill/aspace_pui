@@ -27,3 +27,23 @@
 .facets p {
 	font-size: 0.9em;
 }
+.facets li {
+	width: 100%;
+	border-bottom: 1px solid;
+}
+li.remove {
+	background-image: url("../img/remove.png");
+	background-position: right;
+	background-repeat: no-repeat;
+}
+.recordnumber {
+	background-color: #ccc;
+	padding: 0 5px;
+	font-weight: bold;
+	position: absolute;
+	right: 20px;
+}
+.definition {
+	font-size: 0.7em;
+	float: right;
+}
