@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ASpace PUI Wireframes | Search Results Tree</title>
     <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/foundation-icons.css" />
     <link rel="stylesheet" href="css/aspace.css" />
     <script src="js/vendor/modernizr.js"></script>
   </head>
@@ -101,9 +102,61 @@
 
 	<div class="row">
 
+<!-- main content -->
+
 		<div class="medium-9 columns">
 			<h2>Search results by collection</h2>
+			
+			<div class="recordrow">
+				<h3><a href="03record-collection.html">Collection item title</a></h3>
+				<div class="recordtype collection"><i class="fi-folder" size="24"> </i> Collection</div>
+				<div class="recordsummary">Maecenas faucibus mollis <span class="searchterm2">astronomy</span>. Maecenas sed diam eget risus varius blandit sit amet non magna. Vestibulum id ligula porta semper.</div>
+				<div class="recordcontext"><strong>Context:</strong> <a href="#">Full</a> / <a href="#">Breadcrumb</a> / <a href="#">of</a> / <a href="#">Item</a></div>
+				<div class="recordid"><strong>Identifier:</strong> ABCDEFGHIJKL</div>
+				<div class="contents">
+					<dl class="accordion" data-accordion>
+						<dd class="accordion-navigation">
+							<a href="#panelcontents"><i class="fi-plus" size="24"> </i>Browse contents (34 items contain your search terms)</a>
+							<div id="panelcontents" class="content">
+								<ul>
+									<li>Something</li>
+									<li>Something</li>
+									<li>Still need to work out how this tree will look on the page!</li>
+								</ul>
+							</div>
+						</dd>
+					</dl>
+				</div>
+			</div>
+
+			<div class="recordrow">
+				<h3><a href="03record-collection.html">Collection item title</a></h3>
+				<div class="recordtype collection"><i class="fi-folder" size="24"> </i> Collection</div>
+				<div class="recordsummary">Maecenas faucibus mollis <span class="searchterm2">astronomy</span>. Maecenas sed diam eget risus varius blandit sit amet non magna. Vestibulum id ligula porta semper.</div>
+				<div class="recordcontext"><strong>Context:</strong> <a href="#">Full</a> / <a href="#">Breadcrumb</a> / <a href="#">of</a> / <a href="#">Item</a></div>
+				<div class="recordid"><strong>Identifier:</strong> ABCDEFGHIJKL</div>
+				<div class="contents">
+					<dl class="accordion" data-accordion>
+						<dd class="accordion-navigation">
+							<a href="#panelcontents2"><i class="fi-plus" size="24"> </i>Browse contents (34 items contain your search terms)</a>
+							<div id="panelcontents2" class="content">
+								<ul>
+									<li>Something</li>
+									<li>Something</li>
+									<li>Still need to work out how this tree will look on the page!</li>
+								</ul>
+							</div>
+						</dd>
+					</dl>
+				</div>
+			</div>
+
+
 		</div>
+
+<!-- / main content -->
+
+<!-- sidebar -->
 		
 		<div class="medium-3 columns panel facets">
 			<h2>Refine results</h2>
@@ -129,6 +182,8 @@
 					<li><a href="#">As long as it needs to <span class="recordnumber">23</span></a></li>
 				</ul>
 		</div>
+
+<!-- / sidebar -->
 
 	</div>
 
