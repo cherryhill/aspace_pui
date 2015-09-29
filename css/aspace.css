@@ -47,3 +47,28 @@ li.remove {
 	font-size: 0.7em;
 	float: right;
 }
+
+
+/* search results */
+
+.recordrow {
+	margin: 1em 0 1.5em;
+}
+.recordrow h3 {
+	font-size: 1.5em;
+}
+.recordtype {
+	margin-top: -0.75em;
+	color:#de1965;
+}
+.recordtype.collection {
+	color:#00cf35;
+}
+.recordtype.subject {
+	color:#cf7a00;
+}
+.recordtype.person {
+	color:#b700cf;
+}
+
+/* / search results */
