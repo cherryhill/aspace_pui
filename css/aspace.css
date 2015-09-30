@@ -70,5 +70,8 @@ li.remove {
 .recordtype.person {
 	color:#b700cf;
 }
+.recordtype.folder {
+	color:#009fcf;
+}
 
 /* / search results */
