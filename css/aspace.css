@@ -73,5 +73,37 @@ li.remove {
 .recordtype.folder {
 	color:#009fcf;
 }
+.digitized {
+	float: right;
+	text-align: center;
+	color: #999;
+}
 
 /* / search results */
+
+/* hierarchy tree */
+
+.recordchildren li {
+	margin-left: 2em;
+}
+.recordchildren li i.fi-plus {
+	margin-left: -2em;
+}
+.recordchildren li .treeitemdesc {
+	color: #999;
+	font-style: italic;
+	margin-left: 0.5em;
+}
+
+/* /hierarchy tree */
+
+/* icon sizes */
+i.small {
+	font-size: 1.2em;
+}
+i.medium {
+	font-size: 1.5em;
+}
+i.large {
+	font-size: 5em;
+}

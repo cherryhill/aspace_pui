@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ASpace PUI Wireframes | Search Results</title>
+    <title>ASpace PUI Wireframes | Search Results Modify</title>
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/foundation-icons.css" />
     <link rel="stylesheet" href="css/aspace.css" />
@@ -19,8 +19,8 @@
     </div>
     <div class="row panel callout">
     	<div class="medium-6 large-6 columns">
-    		<h3>Search Results Page</h3>
-    		<p>This page represents the flat search results presented to the user.
+    		<h3>Search Results Page - Modify</h3>
+    		<p>This page represents the new search fields that open up when the user clicks on Modify results.
     	</div>
  		<div class="medium-6 large-6 medium-text-right columns">
  			<a href="index.html" class="button">Back to Table of Contents</a>
@@ -92,7 +92,7 @@
 			Search controls:
 			<ul class="button-group ">
 				<li><a href="01landing.html" class="button small">New search</a></li>
-				<li><a href="02searchresultsmodify.html" class="button small">Modify search</a></li>
+				<li><a href="#" class="button small disabled">Modify search</a></li>
 				<li><a href="02searchresultsrefine.html" class="button small">Search within results</a></li>
 			</ul>
 		</div>
@@ -104,6 +104,120 @@
 				<li><a href="02searchresultsgrid.html" class="button small fi-thumbnails"> Grid</a></li>
 			</ul>
 		</div>
+		<!-- additional search row -->
+		
+				<div class="row">
+		<div class="medium-1 columns">
+		<button href="#" data-dropdown="andornot" aria-controls="andornot" aria-expanded="false" class="button dropdown tiny secondary">And</button><br>
+		<ul id="andornot" data-dropdown-content class="f-dropdown" aria-hidden="true">
+		  <li><a href="#">Or</a></li>
+		  <li><a href="#">Not</a></li>
+		</ul>
+		</div>
+		<div class="medium-4 columns">
+		<form>
+				<input type="text" placeholder="Maria Mitchell" />
+		</form>
+		</div>
+		<div class="medium-3 columns">
+		<button href="#" data-dropdown="recordtype" aria-controls="recordtype2" aria-expanded="false" class="button dropdown tiny secondary">Search all record types</button><br>
+		<ul id="recordtype" data-dropdown-content class="f-dropdown" aria-hidden="true">
+		  <li><a href="#">Search collections</a></li>
+		  <li><a href="#">Search digital materials</a></li>
+		  <li><a href="#">etc. input needed</a></li>
+		</ul>
+		</div>
+		<div class="medium-2 columns">
+		<button href="#" data-dropdown="fieldsearched" aria-controls="fieldsearched2" aria-expanded="false" class="button dropdown tiny secondary">Keyword</button><br>
+		<ul id="fieldsearched" data-dropdown-content class="f-dropdown" aria-hidden="true">
+		  <li><a href="#">Creator</a></li>
+		  <li><a href="#">Notes</a></li>
+		  <li><a href="#">Subject</a></li>
+		  <li><a href="#">Title</a></li>
+		</ul>
+		</div>
+		<div class="medium-1 columns">
+		<a href="#" class="button tiny secondary">x</a>
+		</div>
+		<div class="medium-1 columns">
+		</div>
+		</div>
+				<div class="row">
+		<div class="medium-1 columns">
+		<button href="#" data-dropdown="andornot2" aria-controls="andornot" aria-expanded="false" class="button dropdown tiny secondary">And</button><br>
+		<ul id="andornot2" data-dropdown-content class="f-dropdown" aria-hidden="true">
+		  <li><a href="#">Or</a></li>
+		  <li><a href="#">Not</a></li>
+		</ul>
+		</div>
+		<div class="medium-4 columns">
+		<form>
+				<input type="text" placeholder="astronomy" />
+		</form>
+		</div>
+		<div class="medium-3 columns">
+		<button href="#" data-dropdown="recordtype2" aria-controls="recordtype2" aria-expanded="false" class="button dropdown tiny secondary">Search all record types</button><br>
+		<ul id="recordtype2" data-dropdown-content class="f-dropdown" aria-hidden="true">
+		  <li><a href="#">Search collections</a></li>
+		  <li><a href="#">Search digital materials</a></li>
+		  <li><a href="#">etc. input needed</a></li>
+		</ul>
+		</div>
+		<div class="medium-2 columns">
+		<button href="#" data-dropdown="fieldsearched2" aria-controls="fieldsearched2" aria-expanded="false" class="button dropdown tiny secondary">Keyword</button><br>
+		<ul id="fieldsearched2" data-dropdown-content class="f-dropdown" aria-hidden="true">
+		  <li><a href="#">Creator</a></li>
+		  <li><a href="#">Notes</a></li>
+		  <li><a href="#">Subject</a></li>
+		  <li><a href="#">Title</a></li>
+		</ul>
+		</div>
+		<div class="medium-1 columns">
+		<a href="#" class="button tiny secondary">x</a>
+		</div>
+		<div class="medium-1 columns">
+		</div>
+		</div>
+				<div class="row">
+		<div class="medium-1 columns">
+		<button href="#" data-dropdown="andornot3" aria-controls="andornot" aria-expanded="false" class="button dropdown tiny secondary">And</button><br>
+		<ul id="andornot3" data-dropdown-content class="f-dropdown" aria-hidden="true">
+		  <li><a href="#">Or</a></li>
+		  <li><a href="#">Not</a></li>
+		</ul>
+		</div>
+		<div class="medium-4 columns">
+		<form>
+				<input type="text" placeholder="Enter search terms here" />
+		</form>
+		</div>
+		<div class="medium-3 columns">
+		<button href="#" data-dropdown="recordtype3" aria-controls="recordtype2" aria-expanded="false" class="button dropdown tiny secondary">Search all record types</button><br>
+		<ul id="recordtype3" data-dropdown-content class="f-dropdown" aria-hidden="true">
+		  <li><a href="#">Search collections</a></li>
+		  <li><a href="#">Search digital materials</a></li>
+		  <li><a href="#">etc. input needed</a></li>
+		</ul>
+		</div>
+		<div class="medium-2 columns">
+		<button href="#" data-dropdown="fieldsearched3" aria-controls="fieldsearched2" aria-expanded="false" class="button dropdown tiny secondary">Keyword</button><br>
+		<ul id="fieldsearched3" data-dropdown-content class="f-dropdown" aria-hidden="true">
+		  <li><a href="#">Creator</a></li>
+		  <li><a href="#">Notes</a></li>
+		  <li><a href="#">Subject</a></li>
+		  <li><a href="#">Title</a></li>
+		</ul>
+		</div>
+		<div class="medium-1 columns">
+		<a href="#" class="button tiny secondary">+</a>
+		</div>
+		<div class="medium-1 columns">
+		<a href="#" class="button tiny" data-tooltip aria-haspopup="true" class="has-tip" title="Deactivated for purposes of demo.">Refine</a>
+		</div>
+		</div>
+		<div class="text-right"><p><a href="#" data-tooltip aria-haspopup="true" class="has-tip" title="Clicking this will take the user to a seprate page with helpful information on how to search.">Search help</a></p></div>	
+		
+		<!-- /additional search row -->
 	</div>
 	<!-- / search -->
 
