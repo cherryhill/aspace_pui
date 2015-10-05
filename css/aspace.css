@@ -73,6 +73,12 @@ li.remove {
 .recordtype.folder {
 	color:#009fcf;
 }
+.recordtype.repository {
+	color: olive;
+}
+.recordtype.classification {
+	color: gray;
+}
 .digitized {
 	float: right;
 	text-align: center;
