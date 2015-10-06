@@ -84,6 +84,9 @@ li.remove {
 	text-align: center;
 	color: #999;
 }
+.grid-item {
+	text-align: center;
+}
 /* / search results */
 
 /* hierarchy tree */
@@ -111,4 +114,11 @@ i.medium {
 }
 i.large {
 	font-size: 5em;
+}
+i.giant {
+	font-size: 8em;
+	line-height: 0em;
+}
+.attention {
+	color: green;
 }
