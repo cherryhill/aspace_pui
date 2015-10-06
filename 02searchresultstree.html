@@ -112,7 +112,7 @@
 <!-- main content -->
 
 		<div class="medium-9 columns">
-			<h2>Search results by <span  data-tooltip aria-haspopup="true" class="has-tip" title="This display will not include people or subjects. To be discussed by WG: should the search results include collectiosn where items are tagged with the person or subject searched in agent links/subjects, but where that word/person may not actually appear in the record itself?">collection</span></h2>
+			<h2>Search results by <span  data-tooltip aria-haspopup="true" class="has-tip" title="This display will not include people or subjects. The collections listed will include those that contain items that *only* reference the search terms in subject or agent links, as well as those that use the term(s) in the description, title, or other fields.">collection</span></h2>
 			
 			<div class="recordrow">
 				<h3><a href="03record-collection.html">Collection item title</a></h3>
@@ -132,6 +132,10 @@
 									<li><i class="fi-plus"> &nbsp; </i> Record title three <span class="recordtype folder"><i class="fi-folder small"> </i> Folder</span><br /><span class="treeitemdesc">Subseries/folder information</span></li>
 								</ul>
 								<a href="03record-collection.html" class="button">View collection</a>
+								<div class="panel callout">
+									<h4>Note for WG (not part of UI):</h4>
+									<p>This listing of items includes all items that have the terms searched in any field, including in agent and subject links. It only includes those items that are relevant to the search, not all items in the collection.</p>
+								</div>
 							</div>
 						</dd>
 					</dl>
@@ -235,7 +239,7 @@
 	<!-- last updated line -->
 	<div class="row">
 		<div class="small-12 panel callout columns text-right">
-			<p>Last updated 9/30/15</p>
+			<p>Last updated 10/6/15</p>
 		</div>
 	</div>
 	<!-- /last updated line -->
