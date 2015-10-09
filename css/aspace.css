@@ -110,7 +110,8 @@ i.small {
 	font-size: 1.2em;
 }
 i.medium {
-	font-size: 1.5em;
+	font-size: 3em;
+	line-height: 0em;
 }
 i.large {
 	font-size: 5em;
