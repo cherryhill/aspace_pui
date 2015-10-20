@@ -59,18 +59,20 @@ li.remove {
 }
 .recordtype {
 	margin-top: -0.75em;
+}
+.object {
 	color:#de1965;
 }
-.recordtype.collection {
+.collection {
 	color:#00cf35;
 }
-.recordtype.subject {
+.subject {
 	color:#cf7a00;
 }
-.recordtype.person {
+.person {
 	color:#b700cf;
 }
-.recordtype.folder {
+.folder {
 	color:#009fcf;
 }
 .recordtype.repository {
@@ -86,6 +88,10 @@ li.remove {
 }
 .grid-item {
 	text-align: center;
+}
+.smallnote {
+	color: #999;
+	font-style: italic;
 }
 /* / search results */
 
