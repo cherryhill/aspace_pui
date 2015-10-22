@@ -100,7 +100,8 @@ li.remove {
 .recordchildren li {
 	margin-left: 2em;
 }
-.recordchildren li i.fi-plus {
+.recordchildren li i.fi-plus,
+.recordchildren li i.fi-minus {
 	margin-left: -2em;
 }
 .recordchildren li .treeitemdesc {

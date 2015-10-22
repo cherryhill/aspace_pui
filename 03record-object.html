@@ -81,9 +81,10 @@
 			</div><!-- / ID -->
 			<ul class="breadcrumbs">
 				<li class="current">Context:</li>
-				<li><a href="04landing-repository.html">Repository</a></li>
-				<li><a href="03record-collection.html">Collection</a></li>
-				<li><a href="03record-folder.html">Folder</a></li>
+				<li><a href="04landing-repository.html">Repository Title</a></li>
+				<li><a href="03record-collection.html">Collection Title</a></li>
+				<li><a href="#">Series 1: Title</a></li>
+				<li><a href="#">Subseries 3C: Title</a></li>
 				<li class="unavailable"><a href="#" data-tooltip aria-haspopup="true" class="has-tip" title="Sample of what this would contain from Cory Nimer: Perry Special Collections / Whitney (Newel Kimball) papers / Whitney family papers, 1817-1910 / Papers of Whitney family children, 1957 / Orson K. Whitney papers, 1851-1900">Record title</a></li>
 			</ul>			
 			
@@ -188,15 +189,62 @@
 			    	</ul>
 			    	<div class="panel callout">Question for WG: would it be helpful to include any other information with the subjects listed here? Such as number of records referencing the subject?</div>
 			    </div>
-			  </dd><!-- / accession information -->
+			  </dd><!-- / subject links -->
 			  <dd class="accordion-navigation">
-			    <a href="#additionalcontext"><i class="fi-plus"> </i>Contents and Arrangement &raquo; WORKING ON THIS</a>
-			    <div id="additionalcontext" class="content">
-			    	<img src="img/princeton-context-ex.png" alt="example context from princeton" />
-			    	<div class="panel callout">To discuss with WG: Based on feedback from Cory Nimer, as well as issues in JIRA, it would probably be really helpful to have this kind of physical context provided directly in the record. This would end up looking similar to the browse inventory function in the Collection, but before we wireframe that out we wanted to discuss with the WG. This specific screenshot comes from <a href="http://findingaids.princeton.edu/collections/AC109/c02788">http://findingaids.princeton.edu/collections/AC109/c02788</a></div>
+			    <a href="#externaldocs"><i class="fi-plus"> </i>External Documents (2 links) &raquo;</a>
+			    <div id="externaldocs" class="content">
+			    	<ul>
+			    		<li><a href="#">Document name, format, size</a></li>
+			    		<li><a href="#">Document name, format, size</a></li>
+			    	</ul>
 			    </div>
-			  </dd><!-- / Contents and arrangement -->
+			  </dd><!-- / external documents -->
 			</dl>
+<br />
+			
+			<div class="contentsarrangement">
+			<h4>Contents & Arrangement (option A)</h4>
+				<div id="inventory" class="content">
+					<div class="row">
+						<div class="large-12 columns">
+							<div class="row collapse">
+								<div class="small-10 columns">
+									<input type="text" placeholder="Search contents of the parent collection: Collection title">
+								</div>
+								<div class="small-2 columns" data-tooltip aria-haspopup="true" class="has-tip" title="Patron can use this to refine what is listed in the inventory.">
+									<a href="#" class="button postfix">Search</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<ul class="no-bullet recordchildren">
+						<li><i class="fi-plus"> &nbsp; </i><span class="recordtype folder"><i class="fi-folder small"> </i> Series 1</span>  Record title <span class="treeitemdesc">(dates)</span></li>
+						<li><i class="fi-minus"> &nbsp; </i><span class="recordtype folder"><i class="fi-folder small"> </i> Series 2</span>  Record title two (auto expanded to location of item) <span class="treeitemdesc">(dates)</span>
+							<ul>
+								<li><i class="fi-plus"> &nbsp; </i><span class="recordtype folder"><i class="fi-folder small"> </i> Suberies 2A</span>  Record title <span class="treeitemdesc">(dates)</span></li>
+								<li><i class="fi-plus"> &nbsp; </i><span class="recordtype folder"><i class="fi-folder small"> </i> Suberies 2B</span>  Record title <span class="treeitemdesc">(dates)</span></li>
+								<li><i class="fi-minus"> &nbsp; </i><span class="recordtype folder"><i class="fi-folder small"> </i> Suberies 2C</span>  Record title (auto expanded to location of item) <span class="treeitemdesc">(dates)</span>
+									<ul>
+										<li><span class="recordtype object"><i class="fi-book small"> </i> Archival object</span> Another record <span class="treeitemdesc">(dates)</span></li>
+										<li><span class="recordtype object"><i class="fi-book small"> </i> Archival object</span> Another record <span class="treeitemdesc">(dates)</span></li>
+										<li class="panel"><strong><span class="recordtype object"><i class="fi-book small"> </i> Archival object</span> Current record title <span class="treeitemdesc">(dates)</span></strong></li>
+										<li><span class="recordtype object"><i class="fi-book small"> </i> Archival object</span> Another record <span class="treeitemdesc">(dates)</span></li>
+										<li><span class="recordtype object"><i class="fi-book small"> </i> Archival object</span> Another record <span class="treeitemdesc">(dates)</span></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li><i class="fi-plus"> &nbsp; </i><span class="recordtype folder"><i class="fi-folder small"> </i> Series 3</span> Record title three  <span class="treeitemdesc">(dates)</span></li>
+					</ul>
+					<div class="panel callout">
+						<p>This goes on as long as it needs to for the collection.</p>
+						<p>Each item <strong>links</strong> to the record.</p>
+						<p>This layout is largely based on the Princeton finding aids (<a href="http://findingaids.princeton.edu/collections/LAE035/c027">example</a>).</p>
+						<p>We're a/b'ing Contents & Arrangement to include a sidebar presentation. <!-- <a href="03record-collectionB.html">Review option B.</a> --> Once option B is ready for review, it will be linked here. It will only be represented on the collection record until a decision is made.</p>
+					</div>
+				</div>
+			  </div><!-- / inventory -->
+			
 			
 			<p class="panel callout">For WG: this record display is basically identical to the other record displays (e.g. collection), but we have separate displays for the purposes of seeing the record type and context/breadcrumbs in different settings. There are many questions still open for how this content needs to display. Please see the <a href="03record-collection.html">collection record</a> for those questions.</p>
 
@@ -274,13 +322,13 @@
 			    </div>
 			  </dd><!-- / admin information -->
 			  <dd class="accordion-navigation">
-			    <a href="#objectaccessions"><i class="fi-plus"> </i>Related Accessions &raquo;</a>
+			    <a href="#objectaccessions"><i class="fi-plus"> </i>Related Accession Records &raquo;</a>
 			    <div id="objectaccessions" class="content">
-					<h5>Related Accessions</h5>
+					<h5>Accession Records</h5>
 			    	<ul>
 			    		<li><strong>Gift:</strong> Acton, Harold, 1904-1994. Papers: writings, correspondence, printed material, and personal papers by or relating to Harold Acton</li>
 			    	</ul>
-			    	<h5>Deaccessions</h5>
+			    	<h5>Deaccession Records</h5>
 					<ul>
 						<li class="panel callout">Question for WG: should this information be displaying at all?</li>
 					</ul>

@@ -187,15 +187,28 @@
 			    	</ul>
 			    	<div class="panel callout">Question for WG: would it be helpful to include any other information with the subjects listed here? Such as number of records referencing the subject?</div>
 			    </div>
-			  </dd><!-- / accession information -->
+			  </dd><!-- / subject links -->
 			  <dd class="accordion-navigation">
-			  	<a href="#inventory"><i class="fi-plus"> </i>Browse contents (134 items) &raquo; WORKING ON THIS</a>
-			  	<div id="inventory" class="content">
+			    <a href="#externaldocs"><i class="fi-plus"> </i>External Documents (2 links) &raquo;</a>
+			    <div id="externaldocs" class="content">
+			    	<ul>
+			    		<li><a href="#">Document name, format, size</a></li>
+			    		<li><a href="#">Document name, format, size</a></li>
+			    	</ul>
+			    </div>
+			  </dd><!-- / external documents -->
+			</dl>
+
+			<br />
+			
+			<div class="contentsarrangement">
+			<h4>Contents & Arrangement (option A)</h4>
+				<div id="inventory" class="content">
 					<div class="row">
 						<div class="large-12 columns">
 							<div class="row collapse">
 								<div class="small-10 columns">
-									<input type="text" placeholder="Search inventory">
+									<input type="text" placeholder="Search collection contents">
 								</div>
 								<div class="small-2 columns" data-tooltip aria-haspopup="true" class="has-tip" title="Patron can use this to refine what is listed in the inventory.">
 									<a href="#" class="button postfix">Search</a>
@@ -204,26 +217,31 @@
 						</div>
 					</div>
 					<ul class="no-bullet recordchildren">
-						<li><i class="fi-plus"> &nbsp; </i> Record title <span class="recordtype folder"><i class="fi-folder small"> </i> Folder</span><br /><span class="treeitemdesc">Subseries/folder information<br />&nbsp; Date(s): date info here</span></li>
-						<li><i class="fi-plus"> &nbsp; </i> Record title two <span class="recordtype folder"><i class="fi-folder small"> </i> Folder</span><br /><span class="treeitemdesc">Subseries/folder information<br />&nbsp; Date(s): date info here</span></li>
-						<li>Record title three no sub items <span class="recordtype object"><i class="fi-book small"> </i> Archival object</span><br /><span class="treeitemdesc">Subseries/folder information<br />&nbsp; Date(s): date info here</span></li>
-						<li><i class="fi-plus"> &nbsp; </i> Record title three <span class="recordtype folder"><i class="fi-folder small"> </i> Folder</span><br /><span class="treeitemdesc">Subseries/folder information<br />&nbsp; Date(s): date info here</span></li>
+						<li><i class="fi-plus"> &nbsp; </i><span class="recordtype folder"><i class="fi-folder small"> </i> Series 1</span>  Record title <span class="treeitemdesc">(dates)</span></li>
+						<li><i class="fi-minus"> &nbsp; </i><span class="recordtype folder"><i class="fi-folder small"> </i> Series 2</span>  Record title two (user expanded) <span class="treeitemdesc">(dates)</span>
+							<ul>
+								<li><i class="fi-plus"> &nbsp; </i><span class="recordtype folder"><i class="fi-folder small"> </i> Suberies 2A</span>  Record title <span class="treeitemdesc">(dates)</span></li>
+								<li><i class="fi-minus"> &nbsp; </i><span class="recordtype folder"><i class="fi-folder small"> </i> Suberies 2B</span>  Record title (user expanded) <span class="treeitemdesc">(dates)</span>
+									<ul>
+										<li><span class="recordtype object"><i class="fi-book small"> </i> Archival object</span> Record title no sub items  <span class="treeitemdesc">(dates)</span></li>
+									</ul>
+								</li>
+								<li><i class="fi-plus"> &nbsp; </i><span class="recordtype folder"><i class="fi-folder small"> </i> Suberies 2C</span>  Record title <span class="treeitemdesc">(dates)</span></li>
+							</ul>
+						</li>
+						<li><i class="fi-plus"> &nbsp; </i><span class="recordtype folder"><i class="fi-folder small"> </i> Series 3</span> Record title three  <span class="treeitemdesc">(dates)</span></li>
 					</ul>
-					<p class="panel callout">This goes on as long as it needs to for the collection.</p>
+					<div class="panel callout">
+						<p>This goes on as long as it needs to for the collection.</p>
+						<p>Each item <strong>links</strong> to the record.</p>
+						<p>This layout is largely based on the Princeton finding aids (<a href="http://findingaids.princeton.edu/collections/LAE035/c027">example</a>).</p>
+						<p>We're a/b'ing Contents & Arrangement to include a sidebar presentation. <!-- <a href="03record-collectionB.html">Review option B.</a> --> Once option B is ready for review, it will be linked here.</p>
+					</div>
 				</div>
-			  </dd><!-- / inventory -->
-			</dl>
+			  </div><!-- / inventory -->
 			
 			<p> &nbsp;</p>
 			
-			<div class="panel callout">
-				<h3>More questions for WG</h3>
-				<p>The resource form in pui-staff has a section for External Documents. What are these and how should they be integrated into the record?</p>
-				<p>Should any of the Collection Management data display on the public UI?</p>
-				<p>How do the user defined fields work? How many people are actually using them and for what purposes? Should this data be included in an additional accordion labeled "Other Information &raquo;"?</p>
-				<p>We've included Revision Statements under Administrative Info, but is this correct? Or should this not display in the public UI?</p>
-			</div>
-			<p class="panel callout">For discussion with WG: based on notes from Cory Nimer, I'm interested in the Contents and Arrangement display on the Princeton finding aids (<a href="http://findingaids.princeton.edu/collections/LAE035/c027">example</a>). On the <a href="03record-object.html">Archival Object record display</a> I currently have this situated under "Deeper record context" in the accordions (as a stand-in right now). This might be better situated here, in the right sidebar, under the repository information. Thoughts?</p>
 
 		</div>
 
@@ -301,13 +319,13 @@
 			    </div>
 			  </dd><!-- / admin information -->
 			  <dd class="accordion-navigation">
-			    <a href="#objectaccessions"><i class="fi-plus"> </i>Related Accessions &raquo;</a>
+			    <a href="#objectaccessions"><i class="fi-plus"> </i>Related Accession Records &raquo;</a>
 			    <div id="objectaccessions" class="content">
-					<h5>Related Accessions</h5>
+					<h5>Accession Records</h5>
 			    	<ul>
 			    		<li><strong>Gift:</strong> Acton, Harold, 1904-1994. Papers: writings, correspondence, printed material, and personal papers by or relating to Harold Acton</li>
 			    	</ul>
-			    	<h5>Deaccessions</h5>
+			    	<h5>Deaccession Records</h5>
 					<ul>
 						<li class="panel callout">Question for WG: should this information be displaying at all?</li>
 					</ul>
@@ -317,6 +335,15 @@
 
 
 		</div>
+
+
+			<div class="panel callout">
+				<h3>More questions for WG</h3>
+				<p>Should any of the Collection Management data display on the public UI?</p>
+				<p>How do the user defined fields work? How many people are actually using them and for what purposes? Should this data be included in an additional accordion labeled "Other Information &raquo;"?</p>
+				<p>We've included Revision Statements under Administrative Info, but is this correct? Or should this not display in the public UI?</p>
+			</div>
+
 
 <!-- / sidebar -->
 
