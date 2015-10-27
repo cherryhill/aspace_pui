@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ASpace PUI Wireframes | Record Type - Archival Object</title>
+    <title>ASpace PUI Wireframes | Record Type - Collection Option B</title>
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/foundation-icons.css" />
     <link rel="stylesheet" href="css/aspace.css" />
@@ -19,8 +19,8 @@
     </div>
     <div class="row panel callout">
     	<div class="medium-6 large-6 columns">
-    		<h3>Record Type - Archival Object</h3>
-    		<p>This page represents what an archival object record looks like (with all data possible).
+    		<h3>Record Type - Collection (Option B)</h3>
+    		<p>This page represents what a collection record looks like (with all data possible). This is Option B for handling contents & arrangement. Please see <a href="03record-collection.html">Option A</a> as well.</p>
     	</div>
  		<div class="medium-6 large-6 medium-text-right columns">
  			<a href="index.html" class="button">Back to Table of Contents</a>
@@ -71,24 +71,28 @@
 
 	<div class="row">
 		<p>&nbsp;</p>
-		
+
+
 <!-- main content -->
 
-		<div class="medium-7 columns">
-			<h2>Archival object item title</h2>
+		<div class="medium-8 columns">
+			<h2>Collection item title</h2>
 			<div>
-				<span class="recordtype object"><i class="fi-book small"> </i>Archival Object</span>  &nbsp; &nbsp; <strong>Identifier:</strong> ABCDE12345FGHI
+				<span class="recordtype collection"><i class="fi-clipboard small"> </i>Collection</span>  &nbsp; &nbsp; <strong>Identifier:</strong> ABCDE12345FGHI
 			</div><!-- / ID -->
 			<ul class="breadcrumbs">
 				<li class="current">Context:</li>
-				<li><a href="04landing-repository.html">Repository Title</a></li>
-				<li><a href="03record-collection.html">Collection Title</a></li>
-				<li><a href="#">Series 1: Title</a></li>
-				<li><a href="#">Subseries 3C: Title</a></li>
-				<li class="unavailable"><a href="#">Box 1 Folder 3: Record title</a> <i class="fi-info" data-tooltip aria-haspopup="true" class="has-tip" title="Sample of what this would contain from Cory Nimer: Perry Special Collections / Whitney (Newel Kimball) papers / Whitney family papers, 1817-1910 / Papers of Whitney family children, 1957 / Orson K. Whitney papers, 1851-1900"> </i></li>
+				<li><a href="04landing-repository.html">Repository name</a></li>
+				<li class="unavailable"><a href="#">Collection title</a></li>
 			</ul>			
 			
 			<div class="recordsummary">
+				<div class="objectimage">
+					<img src="img/wood.jpg" alt="sample featured collection image" title="photo by Rain Michaels cc-sa-nc-by" />
+					<p class="panel">Optional image, with caption. <i data-tooltip aria-haspopup="true" class="fi-info has-tip" title="For WG: I included an image here because more imagery will improve the experience. We see this as an optional field that the archivist would populate, or not. Mark Custer suggested that this field auto-pull an image, and the archivist be allowed to override, but whether that is doable in Phase I is a question for Brain."> </i><br />This collection contains <a href=
+					"#" data-tooltip aria-haspopup="true" class="has-tip" title="Clicking this would bring the user to the grid search results display, with the collection pre-searched.">95 digital items</a>.</p>
+				</div>
+
 				<p>Contents of the abstract field. Nullam id dolor id nibh ultricies vehicula ut id elit. Donec id elit non mi porta gravida at eget metus. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
 				<h4>Dates</h4>
 					<ul>
@@ -199,81 +203,14 @@
 			    	</ul>
 			    </div>
 			  </dd><!-- / external documents -->
-			</dl>
-<br />
-			
-			<div class="contentsarrangement">
-			<h4>Contents & Arrangement (option A)</h4>
-				<div id="inventory" class="content">
-					<div class="row">
-						<div class="large-12 columns">
-							<div class="row collapse">
-								<div class="small-10 columns">
-									<input type="text" placeholder="Search contents of the parent collection: Collection title">
-								</div>
-								<div class="small-2 columns" data-tooltip aria-haspopup="true" class="has-tip" title="Patron can use this to refine what is listed in the inventory.">
-									<a href="#" class="button postfix">Search</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<ul class="no-bullet recordchildren">
-						<li><i class="fi-plus"> &nbsp; </i><span class="recordtype folder"><i class="fi-folder small"> </i> Series 1</span>  Record title <span class="treeitemdesc">(dates)</span></li>
-						<li><i class="fi-minus"> &nbsp; </i><span class="recordtype folder"><i class="fi-folder small"> </i> Series 2</span>  Record title two (auto expanded to location of item) <span class="treeitemdesc">(dates)</span>
-							<ul>
-								<li><i class="fi-plus"> &nbsp; </i><span class="recordtype folder"><i class="fi-folder small"> </i> Suberies 2A</span>  Record title <span class="treeitemdesc">(dates)</span></li>
-								<li><i class="fi-plus"> &nbsp; </i><span class="recordtype folder"><i class="fi-folder small"> </i> Suberies 2B</span>  Record title <span class="treeitemdesc">(dates)</span></li>
-								<li><i class="fi-minus"> &nbsp; </i><span class="recordtype folder"><i class="fi-folder small"> </i> Suberies 2C</span>  Record title (auto expanded to location of item) <span class="treeitemdesc">(dates)</span>
-									<ul>
-										<li><span class="recordtype object"><i class="fi-book small"> </i> Box 5 Folder 1</span> Another record <span class="treeitemdesc">(dates)</span></li>
-										<li><span class="recordtype object"><i class="fi-book small"> </i> Box 5 Folder 2</span> Another record <span class="treeitemdesc">(dates)</span></li>
-										<li class="panel"><strong><span class="recordtype object"><i class="fi-book small"> </i> Box 5 Folder 3</span> Current record title <span class="treeitemdesc">(dates)</span></strong></li>
-										<li><span class="recordtype object"><i class="fi-book small"> </i> Box 5 Folder 4</span> Another record <span class="treeitemdesc">(dates)</span></li>
-										<li><span class="recordtype object"><i class="fi-book small"> </i> Box 5 Folder 5</span> Another record <span class="treeitemdesc">(dates)</span></li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-						<li><i class="fi-plus"> &nbsp; </i><span class="recordtype folder"><i class="fi-folder small"> </i> Series 3</span> Record title three  <span class="treeitemdesc">(dates)</span></li>
-					</ul>
-					<div class="panel callout">
-						<p>This goes on as long as it needs to for the collection.</p>
-						<p>Each item <strong>links</strong> to the record.</p>
-						<p>This layout is largely based on the Princeton finding aids (<a href="http://findingaids.princeton.edu/collections/LAE035/c027">example</a>).</p>
-						<p>We're a/b'ing Contents & Arrangement to include a sidebar presentation. <a href="03record-collectionB.html">Review option B.</a> It will only be represented on the collection record until a decision is made.</p>
-					</div>
-				</div>
-			  </div><!-- / inventory -->
-			
-			
-			<p class="panel callout">For WG: this record display is basically identical to the other record displays (e.g. collection), but we have separate displays for the purposes of seeing the record type and context/breadcrumbs in different settings. There are many questions still open for how this content needs to display. Please see the <a href="03record-collection.html">collection record</a> for those questions.</p>
-
-			
-		</div>
-<!-- / main content -->
-
-<!-- sidebar -->
-		
-		<div class="medium-5 columns">
-			<div>
-				<ul class="small-block-grid-4">
-					<li class="text-center"><a href="#" data-reveal-id="citation-modal"><i class="fi-page-copy medium"></i><br />Citation</a></li>
-					<li class="text-center"><a href="#" data-reveal-id="bookmark-modal"><i class="fi-bookmark medium"></i><br />Bookmark</a></li>
-					<li class="text-center"><a href="#" data-reveal-id="request-modal"><i class="fi-telephone medium"></i><br />Request</a></li>
-					<li class="text-center"><a href="#"  data-tooltip aria-haspopup="true" class="has-tip" title="Clicking this icon triggers the browser's print function."><i class="fi-print medium"></i><br />Print</a></li>
-				</ul>
-			</div><!-- helpful icons -->
-			<div>
-				<img src="img/grass_in_sun.jpg" alt="sample digitized image" title="photo by Rain Michaels cc-sa-nc-by" />
-			</div>
-			<div class="panel">
-				<h4>Repository details</h4>
-				<p>Part of the <a href="04landing-repository.html">[Repo name here] repository</a>.</p>
-				<p><strong>Contact:</strong> contact info goes here, freeform set up in repository.</p>
-				<p><strong>Location:</strong> location info here.</p>
-			</div>
-
-			<dl class="accordion" data-accordion>
+			  <dd class="accordion-navigation">
+			  	<a href="#repodetails"><i class="fi-plus"> </i>Repository Details &raquo;</a>
+			  	<div id="repodetails" class="content">
+					<p>Part of the <a href="04landing-repository.html">[Repo name here] repository</a>.</p>
+					<p><strong>Contact:</strong> contact info goes here, freeform set up in repository.</p>
+					<p><strong>Location:</strong> location info here.</p>
+			  	</div>
+			  </dd>
 			  <dd class="accordion-navigation">
 			    <a href="#objectadmininfo"><i class="fi-plus"> </i>Administrative Information &raquo;</a>
 			    <div id="objectadmininfo" class="content">
@@ -336,24 +273,87 @@
 			  </dd><!-- / accession info -->
 			</dl>
 
+			
+
 
 			<div class="panel callout">
-				<h3>About the image</h3>
-				<p>We envision this including zoom functionality, but will leave the specifics of that to Brian regarding what is possible with ASpace and what tools are available.</p>
-				<p>If there are multiple digital records linked to this archival object, then the images would display in a slideshow with thumbnails. Would like to let Brian weigh in on how he wants to develop this before wireframing it so that we don't wireframe something that is too intensive for this phase.</p>
-					<p>Questions for WG: is any additional information needed with the digital object? And more from Cory: Will the system select images for inclusion based on their assigned properties? How will it link through to other linked images in the same record?</p>
+				<h3>More questions for WG</h3>
+				<p>Should any of the Collection Management data display on the public UI?</p>
+				<p>How do the user defined fields work? How many people are actually using them and for what purposes? Should this data be included in an additional accordion labeled "Other Information &raquo;"?</p>
+				<p>We've included Revision Statements under Administrative Info, but is this correct? Or should this not display in the public UI?</p>
 			</div>
+
+
+
+
+			
+			
 		</div>
 
-<!-- / sidebar -->
+<!-- / main content -->
 
 
-	</div>
+<!-- contents arrangement -->
+
+		<div class="medium-4 columns">
+			<div>
+				<ul class="small-block-grid-4">
+					<li class="text-center"><a href="#" data-reveal-id="citation-modal"><i class="fi-page-copy medium"></i><br />Citation</a></li>
+					<li class="text-center"><a href="#" data-reveal-id="bookmark-modal"><i class="fi-bookmark medium"></i><br />Bookmark</a></li>
+					<li class="text-center"><a href="#" data-reveal-id="request-modal"><i class="fi-telephone medium"></i><br />Request</a></li>
+					<li class="text-center"><a href="#"  data-tooltip aria-haspopup="true" class="has-tip" title="Clicking this icon triggers the browser's print function."><i class="fi-print medium"></i><br />Print</a></li>
+				</ul>
+			</div><!-- helpful icons -->
+
+			<div class="contentsarrangement panel">
+			<h4>Contents & Arrangement (option B)</h4>
+				<div id="inventory" class="content">
+					<div class="row">
+						<div class="large-12 columns">
+							<div class="row collapse">
+								<div class="small-8 columns">
+									<input type="text" placeholder="Search collection contents">
+								</div>
+								<div class="small-4 columns" data-tooltip aria-haspopup="true" class="has-tip" title="Patron can use this to refine what is listed in the inventory.">
+									<a href="#" class="button postfix">Search</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<ul class="no-bullet recordchildren">
+						<li><i class="fi-plus"> &nbsp; </i><span class="recordtype folder"><i class="fi-folder small"> </i> Series 1</span>  Record title <span class="treeitemdesc">(dates)</span></li>
+						<li><i class="fi-minus"> &nbsp; </i><span class="recordtype folder"><i class="fi-folder small"> </i> Series 2</span>  Record title two (user expanded) <span class="treeitemdesc">(dates)</span>
+							<ul>
+								<li><i class="fi-plus"> &nbsp; </i><span class="recordtype folder"><i class="fi-folder small"> </i> Suberies 2A</span>  Record title <span class="treeitemdesc">(dates)</span></li>
+								<li><i class="fi-minus"> &nbsp; </i><span class="recordtype folder"><i class="fi-folder small"> </i> Suberies 2B</span>  Record title (user expanded) <span class="treeitemdesc">(dates)</span>
+									<ul>
+										<li><span class="recordtype object"><i class="fi-book small"> </i> Box 5 Folder 1</span> Record title no sub items  <span class="treeitemdesc">(dates) <i href="#"  data-tooltip aria-haspopup="true" class="has-tip fi-info" title="Changed from ARCHIVAL OBJECT to BOX FOLDER due to comments from Cory. Is folder the final level? Or is there still an Archival object level within the folder? If the second, need to change the icons accordingly to represent the proper structure."> </i></span></li>
+									</ul>
+								</li>
+								<li><i class="fi-plus"> &nbsp; </i><span class="recordtype folder"><i class="fi-folder small"> </i> Suberies 2C</span>  Record title <span class="treeitemdesc">(dates)</span></li>
+							</ul>
+						</li>
+						<li><i class="fi-plus"> &nbsp; </i><span class="recordtype folder"><i class="fi-folder small"> </i> Series 3</span> Record title three  <span class="treeitemdesc">(dates)</span></li>
+					</ul>
+					<div class="panel callout">
+						<p>This goes on as long as it needs to for the collection.</p>
+						<p>Each item <strong>links</strong> to the record.</p>
+						<p>This layout is largely based on the Princeton finding aids (<a href="http://findingaids.princeton.edu/collections/LAE035/c027">example</a>).</p>
+						<p>We're a/b'ing Contents & Arrangement to include a sidebar presentation. <a href="03record-collectionB.html">Review option A.</a></p>
+					</div>
+				</div>
+			</div><!-- / inventory -->
+		</div>
+
+<!-- / contents arrangement -->
+
 
 	<!-- /page content section -->
 
 
-<div class="spacer">&nbsp;</div>
+
+
+<div class="spacer"><p> &nbsp; </p></div>
 
 
 
@@ -365,8 +365,7 @@
 		</div>
 	</div>
 	<!-- /last updated line -->
-	
-	
+    
 	<!-- modals -->
 	<div id="citation-modal" class="reveal-modal" data-reveal aria-labelledby="Citation information" aria-hidden="true" role="dialog">
 		<h2 id="Citation information">Citation details</h2>
@@ -389,12 +388,13 @@
 		<a class="close-reveal-modal" aria-label="Close">&#215;</a>
 	</div>	
 	<!-- / modals -->
-	
-    
+
+
+
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script>
       $(document).foundation();
     </script>
   </body>
-</html
+</html>
