@@ -97,9 +97,9 @@
 		<div class="medium-6 columns text-right">	
 			Display search results as:
 			<ul class="button-group text-right">
-				<li><a href="02searchresults.html" class="button small fi-list-thumbnails disabled"> List</a></li>
-				<li><a href="02searchresultstree.html" class="button small fi-page-multiple"> Tree</a></li>
-				<li><a href="02searchresultsgrid.html" class="button small fi-thumbnails"> Grid</a></li>
+				<li><a href="02searchresults.html" class="button small fi-list-thumbnails disabled"> All items</a></li>
+				<li><a href="02searchresultstree.html" class="button small fi-page-multiple"> Collections</a></li>
+				<li><a href="02searchresultsgrid.html" class="button small fi-thumbnails"> Digital items</a></li>
 			</ul>
 		</div>
 	</div>
@@ -236,11 +236,11 @@
 		
 <!-- right sidebar -->
 		
-		<div class="medium-3 columns panel facets">
+		<div class="medium-3 columns panel facetgroup">
 			<h2>Filter results</h2>
 			<span class="definition">Remove</span>
 			<h3 data-tooltip aria-haspopup="true" class="has-tip" title="These results include each term individually using the OR modifier.">Search terms <i class="fi-info"></i></h3>
-			<div>
+			<div class="facets">
 				<ul class="side-nav">
 					<li class="remove"><a href="#">Maria Mitchell</a></li>
 					<li class="remove"><a href="#">astronomy</a></li>
@@ -255,7 +255,12 @@
 				</form>
 			</div>
 			<h3 data-tooltip aria-haspopup="true" class="has-tip" title="Following are additional filters available based on your current search parameters. These options will narrow your results down to each specific category.">Additional filters <i class="fi-info"></i></h3>
-			<div>
+			<span class="smalltext">Sort filters by:</span>
+			<ul class="button-group">
+				<li><a href="#" class="button tiny disabled"># of records</a></li>
+				<li><a href="#" class="button tiny">Alphabetically</a></li>
+			</ul>
+			<div class="facets">
 				<span class="definition"># of records</span>
 				<h5>Record types</h5>
 				<ul class="side-nav">
@@ -271,9 +276,15 @@
 				<span class="definition"># of records</span>
 				<h5>Category 3</h5>
 				<ul class="side-nav">
-					<li><a href="#">This will go on <span class="recordnumber">44</span></a></li>
-					<li><a href="#">As long as it needs to <span class="recordnumber">23</span></a></li>
+					<li><a href="#">Facets will go on <span class="recordnumber">44</span></a></li>
+					<li><a href="#">As long as they need to <span class="recordnumber">23</span></a></li>
+					<li><a href="#">But only 10 will show <span class="recordnumber">18</span></a></li>
+					<li><a href="#">In each cateogry, at first <span class="recordnumber">13</span></a></li>
+					<li><a href="#">If there are more <span class="recordnumber">7</span></a></li>
+					<li><a href="#">The user will see a <span class="recordnumber">6</span></a></li>
+					<li><a href="#">Show more button <span class="recordnumber">2</span></a></li>
 				</ul>
+				<a href="#" class="showall button tiny">show more</a>
 			</div>
 		</div>
 
@@ -296,7 +307,7 @@
 	<!-- last updated line -->
 	<div class="row">
 		<div class="small-12 panel callout columns text-right">
-			<p>Last updated 10/22/15</p>
+			<p>Last updated 11/4/15</p>
 		</div>
 	</div>
 	<!-- /last updated line -->

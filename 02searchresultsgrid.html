@@ -97,9 +97,9 @@
 		<div class="medium-6 columns text-right">	
 			Display search results as:
 			<ul class="button-group text-right">
-				<li><a href="02searchresults.html" class="button small fi-list-thumbnails"> List</a></li>
-				<li><a href="02searchresultstree.html" class="button small fi-page-multiple"> Tree</a></li>
-				<li><a href="02searchresultsgrid.html" class="button small fi-thumbnails disabled"> Grid</a></li>
+				<li><a href="02searchresults.html" class="button small fi-list-thumbnails"> All items</a></li>
+				<li><a href="02searchresultstree.html" class="button small fi-page-multiple"> Collections</a></li>
+				<li><a href="02searchresultsgrid.html" class="button small fi-thumbnails disabled"> Digital items</a></li>
 			</ul>
 		</div>
 	</div>
@@ -212,11 +212,11 @@
 		
 <!-- right sidebar -->
 		
-		<div class="medium-3 columns panel facets">
+		<div class="medium-3 columns panel facetgroup">
 			<h2>Filter results</h2>
 			<span class="definition">Remove</span>
 			<h3 data-tooltip aria-haspopup="true" class="has-tip" title="These results include each term individually using the OR modifier.">Search terms <i class="fi-info"></i></h3>
-			<div>
+			<div class="facets">
 				<ul class="side-nav">
 					<li class="remove"><a href="#">Maria Mitchell</a></li>
 					<li class="remove"><a href="#">astronomy</a></li>
@@ -231,7 +231,12 @@
 				</form>
 			</div>
 			<h3 data-tooltip aria-haspopup="true" class="has-tip" title="Following are additional filters available based on your current search parameters. These options will narrow your results down to each specific category.">Additional filters <i class="fi-info"></i></h3>
-			<div>
+			<span class="smalltext">Sort filters by:</span>
+			<ul class="button-group">
+				<li><a href="#" class="button tiny disabled"># of records</a></li>
+				<li><a href="#" class="button tiny">Alphabetically</a></li>
+			</ul>
+			<div class="facets">
 				<span class="definition"># of records</span>
 				<h5>Record types</h5>
 				<ul class="side-nav">
@@ -272,7 +277,7 @@
 	<!-- last updated line -->
 	<div class="row">
 		<div class="small-12 panel callout columns text-right">
-			<p>Last updated 10/22/15</p>
+			<p>Last updated 11/4/15</p>
 		</div>
 	</div>
 	<!-- /last updated line -->

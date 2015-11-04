@@ -12,19 +12,19 @@
 .searchterm2 {
 	background-color: #f8d6f7;
 }
-.facets h2 {
+.facetgroup h2 {
 	font-size: 2em;
 }
-.facets h3 {
+.facetgroup h3 {
 	font-size: 1.2em;
 	border-bottom: 1px solid;
 }
-.facets h4 {
+.facetgroup h4 {
 	font-size: 1em;
 	font-weight: bold;
 	text-transform: uppercase;
 }
-.facets p {
+.facetgroup p {
 	font-size: 0.9em;
 }
 .facets li {
@@ -47,7 +47,9 @@ li.remove {
 	font-size: 0.7em;
 	float: right;
 }
-
+.smalltext {
+	font-size: 0.7em;
+}
 
 /* search results */
 
@@ -92,6 +94,9 @@ li.remove {
 .smallnote {
 	color: #999;
 	font-style: italic;
+}
+.showall {
+	float: right;
 }
 /* / search results */
 
