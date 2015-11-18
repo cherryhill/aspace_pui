@@ -104,6 +104,11 @@ li.remove {
 
 .contentsarrangement ul {
 	margin-left: 2em;
+	font-size: 0.9em;
+	line-height: 1.2em;
+}
+.contentsarrangement ul ul {
+	font-size: 1em;
 }
 .recordchildren li i.fi-plus,
 .recordchildren li i.fi-minus {
