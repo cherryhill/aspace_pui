@@ -114,7 +114,8 @@ li.remove {
 .recordchildren li i.fi-minus {
 	margin-left: -2em;
 }
-.recordchildren li .treeitemdesc {
+.recordchildren li .treeitemdesc,
+.seemorelink {
 	color: #999;
 	font-style: italic;
 	margin-left: 0.5em;
