@@ -20,7 +20,7 @@
     <div class="row panel callout">
     	<div class="medium-6 large-6 columns">
     		<h3>Landing Display - Subject</h3>
-    		<p>This page represents what a subject landing display looks like (with all data possible). <strong>This is still being built and not yet ready for review!</strong>
+    		<p>This page represents what a subject landing display looks like (with all data possible).</p>
     	</div>
  		<div class="medium-6 large-6 medium-text-right columns">
  			<a href="index.html" class="button">Back to Table of Contents</a>
@@ -70,45 +70,133 @@
 
 
 	<div class="row">
-			<div class="panel callout contain-to-grid">This is still being coded. Don't review just yet.</div>
-
+		<p>&nbsp;</p>
+		
 <!-- main content -->
 
 		<div class="medium-9 columns">
 			<h2>Subject title</h2>
-			<div class="recordtype subject"><i class="fi-price-tag small"> </i> Subject</div>
+			<div>
+				<span class="recordtype subject"><i class="fi-price-tag small"> </i> Subject</span> &nbsp; &nbsp; <strong>Identifier:</strong> ABCDE12345FGHI
+			</div><!-- / ID -->			
 			
-			
-				<div class="recordsummary">Maecenas faucibus mollis <span class="searchterm2">astronomy</span>. Maecenas sed diam eget risus varius blandit sit amet non magna. Vestibulum id ligula porta semper.</div>
-				<div class="recordcontext"><strong>Context:</strong> <a href="#">Full</a> / <a href="#">Breadcrumb</a> / <a href="#">of</a> / <a href="#">Item</a></div>
+			<div class="recordsummary">
+				<p>Contents of the biography/historical note field. Nullam id dolor id nibh ultricies vehicula ut id elit. Donec id elit non mi porta gravida at eget metus. Cras justo odio, dapibus ac facilisis in, egestas eget quam...<br /> ... <span class="seemorelink">see more</span> ... <i class="fi-info has-tip" data-tooltip aria-haspopup="true" title="Show the first 300 or so characters, then use a see more link to expand the description."> </i></p>
+				<p><strong>Source:</strong> Local sources</p>
+			</div>
+
+
+	<!-- search -->
+	<div class="row">
+		<h3>Related collections</h3>
+		
+		<div class="medium-4 columns">
+			<form>
+				<input type="text" placeholder="Enter your search terms" />
+			</form>
+		</div>
+		<div class="medium-3 columns">
+			<button href="#" data-dropdown="recordtype" aria-controls="recordtype" aria-expanded="false" class="button dropdown tiny secondary">Search all record types</button><br>
+			<ul id="recordtype" data-dropdown-content class="f-dropdown" aria-hidden="true">
+				<li><a href="#">Search collections</a></li>
+				<li><a href="#">Search digital materials</a></li>
+				<li><a href="#">etc. input needed</a></li>
+			</ul>
+		</div>
+		<div class="medium-2 columns">
+			<button href="#" data-dropdown="fieldsearched" aria-controls="fieldsearched" aria-expanded="false" class="button dropdown tiny secondary">Keyword</button><br>
+			<ul id="fieldsearched" data-dropdown-content class="f-dropdown" aria-hidden="true">
+				<li><a href="#">Creator</a></li>
+				<li><a href="#">Notes</a></li>
+				<li><a href="#">Subject</a></li>
+				<li><a href="#">Title</a></li>
+			</ul>
+		</div>
+		<div class="medium-1 columns">
+			<a href="#" class="button tiny secondary">+</a>
+		</div>
+		<div class="medium-1 columns">
+			<a href="02searchresults.html" class="button tiny">Search</a>
+		</div>
+		<div class="medium-1 columns">
+			&nbsp;
+		</div>
+	</div>
+	<div class="row">
+		<div class="text-right"><p><a href="#" data-tooltip aria-haspopup="true" class="has-tip" title="Clicking this will take the user to a seprate page with helpful information on how to search.">Search help</a> &nbsp;&nbsp;&nbsp;&nbsp;</p></div>	
+	</div>	
+	<!-- / search -->
+
+			<div class="recordrow">
+				<h3><a href="03record-collection.html">Collection item title</a></h3>
+				<div class="recordtype collection"><i class="fi-clipboard small"> </i> Collection</div>
+				<div class="recordsummary">Maecenas faucibus mollis astronomy. Maecenas sed diam eget risus varius blandit sit amet non magna. Vestibulum id ligula porta semper.</div>
+				<div class="recorddate"><strong>Date(s):</strong> 1903-1943</div>
 				<div class="recordid"><strong>Identifier:</strong> ABCDEFGHIJKL</div>
-				<div class="contents">
-					<dl class="accordion" data-accordion>
-						<dd class="accordion-navigation">
-							<a href="#panelcontents"><i class="fi-plus"> </i>Browse contents (34 items contain your search terms)</a>
-							<div id="panelcontents" class="content">
-								<div class="row">
-									<div class="large-12 columns">
-										<div class="row collapse">
-											<div class="small-10 columns">
-												<input type="text" placeholder="Search inventory">
-											</div>
-											<div class="small-2 columns" data-tooltip aria-haspopup="true" class="has-tip" title="Not convinced this should be here. Might be too many search fields on one page. Might be best to have this on the collection page only.">
-												<a href="#" class="button postfix">Search</a>
-        									</div>
-										</div>
-									</div>
-								</div>
-								<ul class="no-bullet recordchildren">
-									<li><i class="fi-plus"> &nbsp; </i> Record title <span class="recordtype folder"><i class="fi-folder small"> </i> Folder</span><br /><span class="treeitemdesc">Subseries/folder information</span></li>
-									<li><i class="fi-plus"> &nbsp; </i> Record title two <span class="recordtype folder"><i class="fi-folder small"> </i> Folder</span><br /><span class="treeitemdesc">Subseries/folder information</span></li>
-									<li>Record title three no sub items <span class="recordtype object"><i class="fi-book small"> </i> Archival object</span><br /><span class="treeitemdesc">Subseries/folder information</span></li>
-									<li><i class="fi-plus"> &nbsp; </i> Record title three <span class="recordtype folder"><i class="fi-folder small"> </i> Folder</span><br /><span class="treeitemdesc">Subseries/folder information</span></li>
-								</ul>
-							</div>
-						</dd>
-					</dl>
-				</div>
+			</div>
+
+			<div class="recordrow">
+				<h3><a href="03record-collection.html">Collection item title</a></h3>
+				<div class="recordtype collection"><i class="fi-clipboard small"> </i> Collection</div>
+				<div class="recordsummary">Maecenas faucibus mollis astronomy. Maecenas sed diam eget risus varius blandit sit amet non magna. Vestibulum id ligula porta semper.</div>
+				<div class="recorddate"><strong>Date(s):</strong> 1903-1943</div>
+				<div class="recordid"><strong>Identifier:</strong> ABCDEFGHIJKL</div>
+			</div>
+
+			<div class="recordrow">
+				<h3><a href="03record-collection.html">Collection item title</a></h3>
+				<div class="recordtype collection"><i class="fi-clipboard small"> </i> Collection</div>
+				<div class="recordsummary">Maecenas faucibus mollis astronomy. Maecenas sed diam eget risus varius blandit sit amet non magna. Vestibulum id ligula porta semper.</div>
+				<div class="recorddate"><strong>Date(s):</strong> 1903-1943</div>
+				<div class="recordid"><strong>Identifier:</strong> ABCDEFGHIJKL</div>
+			</div>
+
+			<div class="recordrow">
+				<h3><a href="03record-collection.html">Collection item title</a></h3>
+				<div class="recordtype collection"><i class="fi-clipboard small"> </i> Collection</div>
+				<div class="recordsummary">Maecenas faucibus mollis astronomy. Maecenas sed diam eget risus varius blandit sit amet non magna. Vestibulum id ligula porta semper.</div>
+				<div class="recorddate"><strong>Date(s):</strong> 1903-1943</div>
+				<div class="recordid"><strong>Identifier:</strong> ABCDEFGHIJKL</div>
+			</div>
+
+			<div class="recordrow">
+				<h3><a href="03record-collection.html">Collection item title</a></h3>
+				<div class="recordtype collection"><i class="fi-clipboard small"> </i> Collection</div>
+				<div class="recordsummary">Maecenas faucibus mollis astronomy. Maecenas sed diam eget risus varius blandit sit amet non magna. Vestibulum id ligula porta semper.</div>
+				<div class="recorddate"><strong>Date(s):</strong> 1903-1943</div>
+				<div class="recordid"><strong>Identifier:</strong> ABCDEFGHIJKL</div>
+			</div>
+
+			<div class="recordrow">
+				<h3><a href="03record-collection.html">Collection item title</a></h3>
+				<div class="recordtype collection"><i class="fi-clipboard small"> </i> Collection</div>
+				<div class="recordsummary">Maecenas faucibus mollis astronomy. Maecenas sed diam eget risus varius blandit sit amet non magna. Vestibulum id ligula porta semper.</div>
+				<div class="recorddate"><strong>Date(s):</strong> 1903-1943</div>
+				<div class="recordid"><strong>Identifier:</strong> ABCDEFGHIJKL</div>
+			</div>
+
+			<div class="recordrow">
+				<h3><a href="03record-collection.html">Collection item title</a></h3>
+				<div class="recordtype collection"><i class="fi-clipboard small"> </i> Collection</div>
+				<div class="recordsummary">Maecenas faucibus mollis astronomy. Maecenas sed diam eget risus varius blandit sit amet non magna. Vestibulum id ligula porta semper.</div>
+				<div class="recorddate"><strong>Date(s):</strong> 1903-1943</div>
+				<div class="recordid"><strong>Identifier:</strong> ABCDEFGHIJKL</div>
+			</div>
+
+			<ul class="pagination" role="menubar" aria-label="Pagination">
+				<li class="arrow unavailable" aria-disabled="true"><a href="">&laquo; Previous</a></li>
+				<li class="current"><a href="">1</a></li>
+				<li><a href="">2</a></li>
+				<li><a href="">3</a></li>
+				<li><a href="">4</a></li>
+				<li class="unavailable" aria-disabled="true"><a href="">&hellip;</a></li>
+				<li><a href="">12</a></li>
+				<li><a href="">13</a></li>
+				<li class="arrow"><a href="">Next &raquo;</a></li>
+			</ul>
+
+
+
 		</div>
 
 <!-- / main content -->
@@ -116,7 +204,33 @@
 <!-- sidebar -->
 		
 		<div class="medium-3 columns panel facets">
-			<p>Coming soon.</p>
+			<h3>More about Subject</h3>
+			<dl class="accordion" data-accordion>
+			  <dd class="accordion-navigation">
+			    <a href="#nameforms"><i class="fi-plus"> </i> Terms/Subdivisions &raquo;</a>
+			    <div id="nameforms" class="content">
+					<p>Cultural Context:</p>
+					<ul>
+						<li>Some term here</li>
+						<li>Another term here</li>
+					</ul>
+					<p>Geographic:</p>
+					<ul>
+						<li>And one more</li>
+					</ul>
+			    </div>
+			  </dd><!-- / nameforms -->
+			  <dd class="accordion-navigation">
+			    <a href="#externaldocs"><i class="fi-plus"> </i>External Documents &raquo;</a>
+			    <div id="externaldocs" class="content">
+			    	<ul>
+			    		<li><a href="#">Document name, format, size</a></li>
+			    		<li><a href="#">Document name, format, size</a></li>
+			    	</ul>
+			    </div>
+			  </dd><!-- / external documents -->
+			</dl>
+
 		</div>
 
 <!-- / sidebar -->
@@ -124,7 +238,6 @@
 	</div>
 
 	<!-- /page content section -->
-
 
 
 
@@ -136,7 +249,7 @@
 	<!-- last updated line -->
 	<div class="row">
 		<div class="small-12 panel callout columns text-right">
-			<p>Last updated 10/22/15</p>
+			<p>Last updated 12/2/15</p>
 		</div>
 	</div>
 	<!-- /last updated line -->
