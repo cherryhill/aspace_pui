@@ -20,7 +20,7 @@
     <div class="row panel callout">
     	<div class="medium-6 large-6 columns">
     		<h3>Utility Display - Bookmarks</h3>
-    		<p>This page represents what the bookmarks display will look like. <strong>This is still being built and not yet ready for review!</strong>
+    		<p>This page represents what the bookmarks display will look like.</p>
     	</div>
  		<div class="medium-6 large-6 medium-text-right columns">
  			<a href="index.html" class="button">Back to Table of Contents</a>
@@ -70,23 +70,134 @@
 
 
 	<div class="row">
-			<div class="panel callout contain-to-grid">This is still being coded. Don't review just yet.</div>
+			<div class="panel callout contain-to-grid"><strong>Bookmarks are only stored for your current browsing session.</strong></div>
 
 <!-- main content -->
 
 		<div class="medium-9 columns">
-			<p>Coming soon.</p>
+			<div class="row">
+				<div class="medium-9 columns">
+					<h2>Bookmarks</h2>
+				</div>
+				<div class="medium-3 columns">
+					Sort by: <button href="#" data-dropdown="relevance" aria-controls="relevance" aria-expanded="false" class="button dropdown tiny">Title</button><br>
+							<ul id="relevance" data-dropdown-content class="f-dropdown" aria-hidden="true">
+								<li><a href="#">Date added</a></li>
+								<li><a href="#">Time bookmarked</a></li>
+								<li><a href="#">Anything else?</a></li>
+							</ul>
+						</p>
+				</div>
+			</div>
+			
+			<div class="recordrow">
+				<h3><a href="03record-collection.html">Collection item title</a></h3>
+				<div class="recordtype"><span class="collection"><i class="fi-clipboard small"> </i> Collection</span> &nbsp; | &nbsp; <strong>Identifier:</strong> ABCDEFGHIJKL</div>
+				<div class="recordsummary">Maecenas faucibus mollis astronomy. Maecenas sed diam eget risus varius blandit sit amet non magna. Vestibulum id ligula porta semper.</div>
+				<div class="recorddate"><strong>Date(s):</strong> 1903-1943</div>
+				<div class="recordcontext"><strong>Context:</strong> <a href="#">Repository name</a></div>
+				<div class="remove"><a href="#"><i class="fi-x"> </i>Remove bookmark</a></div>
+			</div>
+
+			<div class="recordrow">
+				<h3><a href="04landing-subject.html">Subject astronomy item title</a></h3>
+				<div class="recordtype"><span class="subject"><i class="fi-price-tag small"> </i> Subject</span></div>
+				<div class="recordsummary">Maecenas Maria Mitchell mollis interdum. Maecenas sed diam eget risus varius blandit sit amet non magna. Vestibulum id ligula porta semper.</div>
+				<div class="recordcontext"><strong>Context:</strong> Appears in <a href="#">123 records (view all &raquo;)</a></div>
+				<div class="remove"><a href="#"><i class="fi-x"> </i>Remove bookmark</a></div>
+			</div>
+
+			<div class="recordrow">
+				<div class="digitized"><i class="fi-photo large"></i><br /><a href="03record-object.html" class="button tiny">digitized material available</a></div>
+				<h3><a href="03record-object.html">Archival object Maria Mitchell item title</a></h3>
+				<div class="recordtype"><span class="object"><i class="fi-book small"> </i> Archival object</span> &nbsp; | &nbsp; <strong>Identifier:</strong> ABCDEFGHIJKL</div>
+				<div class="recordsummary">Maecenas faucibus mollis interdum. Maria Mitchell sed diam eget risus varius blandit sit amet non magna. Vestibulum id ligula porta semper.</div>
+				<div class="recorddate"><strong>Date(s):</strong> c. 1943</div>
+				<div class="recordcontext"><strong>Context:</strong> <a href="#">Repository name</a> / <a href="#">Collection title</a> / <a href="#">Series 1: title</a> / <a href="#">Subseries 3C: title</a></div>
+				<div class="remove"><a href="#"><i class="fi-x"> </i>Remove bookmark</a></div>
+			</div>
+
+			<div class="recordrow">
+				<h3><a href="04landing-agent.html">Person item title</a></h3>
+				<div class="recordtype person"><i class="fi-address-book"> </i> Person</div>
+				<div class="recordsummary">Maecenas faucibus mollis interdum. Maecenas sed diam eget risus varius blandit sit amet non magna. astronomy id ligula porta semper.</div>
+				<div class="recorddate"><strong>Date(s):</strong> 1818-1889</div>
+				<div class="recordcontext"><strong>Context:</strong> Appears in <a href="#">22 records (view all &raquo;)</a></div>
+				<div class="remove"><a href="#"><i class="fi-x"> </i>Remove bookmark</a></div>
+			</div>
+
+			<div class="recordrow panel callout">
+				<p>Obviously not all of the data might be available in unprocessed material. Only the data that is available will display.</p>
+			</div>
+
+			<ul class="pagination" role="menubar" aria-label="Pagination">
+				<li class="arrow unavailable" aria-disabled="true"><a href="">&laquo; Previous</a></li>
+				<li class="current"><a href="">1</a></li>
+				<li><a href="">2</a></li>
+				<li><a href="">3</a></li>
+				<li><a href="" data-tooltip aria-haspopup="true" class="has-tip" title="Daytime TV Magazine collection to Dewey (George) papers"><strong>4</strong></a></li>
+				<li class="unavailable" aria-disabled="true"><a href="">&hellip;</a></li>
+				<li><a href="">12</a></li>
+				<li><a href="">13</a></li>
+				<li class="arrow"><a href="">Next &raquo;</a></li>
+			</ul>
+
 		</div>
-
-<!-- / main content -->
-
-<!-- sidebar -->
 		
-		<div class="medium-3 columns panel facets">
-			<p>Coming soon.</p>
+<!-- / main content -->
+		
+		
+<!-- right sidebar -->
+		
+		<div class="medium-3 columns">
+			<div>
+				<ul class="small-block-grid-2">
+					<li class="text-center"><a href="#" data-reveal-id="request-modal"><i class="fi-telephone medium"></i><br />Request Access</a></li>
+					<li class="text-center"><a href="#"  data-tooltip aria-haspopup="true" class="has-tip" title="Clicking this icon triggers the browser's print function."><i class="fi-print medium"></i><br />Print</a></li>
+				</ul>
+			</div><!-- helpful icons -->
+
+		
+			 <div class="panel facetgroup">
+				<h2>Filter bookmarks</h2>
+				<h3 data-tooltip aria-haspopup="true" class="has-tip" title="This filter narrow the results down based on the date the original object was created, authored, or otherwise came into existence. They do not correlate to when the record itself was created. Date searches may not be all inclusive because some dates are too vague to be machine readable. Those records cannot be caught by this filter.">Dates to include <i class="fi-info"></i></h3>
+				<div>
+				<form>
+					<input type="text" placeholder="Start year"> to
+					<input type="text" placeholder="End year">
+					<a href="#" class="button postfix">Filter</a>
+				</form>
+			</div>
+				<h3 data-tooltip aria-haspopup="true" class="has-tip" title="Following are additional filters available based on your current search parameters. These options will narrow your results down to each specific category.">Additional filters <i class="fi-info"></i></h3>
+				<span class="smalltext">Sort filters by:</span>
+				<ul class="button-group">
+				<li><a href="#" class="button tiny disabled"># of records</a></li>
+				<li><a href="#" class="button tiny">Title</a></li>
+			</ul>
+				<div class="facets">
+				<span class="definition"># of records</span>
+				<h5>Subjects</h5>
+				<ul class="side-nav">
+					<li><a href="#">Art critics <span class="recordnumber">15</span></a></li>
+					<li><a href="#">Blacklisting <span class="recordnumber">3</span></a></li>
+				</ul>
+				<span class="definition"># of records</span>
+				<h5>Category 2</h5>
+				<ul class="side-nav">
+					<li><a href="#">Facets will go on <span class="recordnumber">44</span></a></li>
+					<li><a href="#">As long as they need to <span class="recordnumber">23</span></a></li>
+					<li><a href="#">But only 10 will show <span class="recordnumber">18</span></a></li>
+					<li><a href="#">In each cateogry, at first <span class="recordnumber">13</span></a></li>
+					<li><a href="#">If there are more <span class="recordnumber">7</span></a></li>
+					<li><a href="#">The user will see a <span class="recordnumber">6</span></a></li>
+					<li><a href="#">Show more button <span class="recordnumber">2</span></a></li>
+				</ul>
+				<a href="#" class="showall button tiny">show more</a>
+			</div>
+			</div>
 		</div>
 
-<!-- / sidebar -->
+<!-- / right sidebar -->
 
 	</div>
 
@@ -103,11 +214,22 @@
 	<!-- last updated line -->
 	<div class="row">
 		<div class="small-12 panel callout columns text-right">
-			<p>Last updated 10/22/15</p>
+			<p>Last updated 12/2/15</p>
 		</div>
 	</div>
 	<!-- /last updated line -->
-    
+  
+  
+	<!-- modals -->
+	<div id="request-modal" class="reveal-modal" data-reveal aria-labelledby="Request this item" aria-hidden="true" role="dialog">
+		<h2 id="Request this item">Request access to this item</h2>
+		<p class="panel callout">For WG: this will be a simple form in Phase I, unless the institution has Aeon (in which case it will use that). What fields are needed for the Phase I form?</p>
+		<div class="button fi-telephone"> Submit request</div>
+		<a class="close-reveal-modal" aria-label="Close">&#215;</a>
+	</div>	
+	<!-- / modals -->
+
+  
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script>
