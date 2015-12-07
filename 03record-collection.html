@@ -123,41 +123,35 @@
 					<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Nullam id dolor id nibh ultricies vehicula ut id elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus.</p>
 					<p>Etiam porta sem malesuada magna mollis euismod. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec sed odio dui. Nulla vitae elit libero, a pharetra augue.</p>   
 					<div class="panel callout">
-					<p>Following is a list of all of the note fields broken into three categories.</p>
-					<p><strong>Category 1:</strong> notes indicated by the DACS order, in order, that are not represented elsewhere in the record</p>
+					<p><strong>For developer:</strong> Following is the list of note fields in what should become their default display order. The archivist should be able to re-order these if desired. This default order is indicated by the DACS order.</p>
 						<ol>
-							<li>Bibliography</li>
 							<li>Bibliographical / Historical</li>
 							<li>Scope and Contents</li>
 							<li>Arrangement</li>
 							<li>Physical Characteristics and Technical Requirements</li>
-							<li>Physical Description</li>
-							<li>Physical Facet</li>
 							<li>Physical Location</li>
-						</ol>
-
-						<p><strong>Category 2:</strong> not indicated by DACS order, or I'm not looking in the right place, so still need to know from WG what order these show in</p>
-
-						<ul>
-							<li>Accruals</li>
-							<li>Appraisal</li>
-							<li>Custodial History</li>
-							<li>Dimensions</li>
-							<li>Existence and Location of Copies</li>
-							<li>Existence and Location of Originals</li>
-							<li>File Plan</li>
-							<li>General</li>
-							<li>Immediate Source of Acquisition</li>
-							<li>Index</li>
-							<li>Legal Status</li>
-							<li>Materials Specific Details</li>
 							<li>Other Finding Aids</li>
-							<li>Processing Information</li>
+							<li>Custodial History</li>
+							<li>Immediate Source of Acquisition</li>
+							<li>Appraisal</li>
+							<li>Accruals</li>
+							<li>Existence and Location of Originals</li>
+							<li>Existence and Location of Copies</li>
 							<li>Related Materials</li>
 							<li>Separated Materials</li>
-						</ul>
+							<li>Bibliography</li>
+							<li>Materials Specific Details</li>
+							<li>Physical Description</li>
+							<li>Physical Facet</li>
+							<li>Dimensions</li>
+							<li>File Plan</li>
+							<li>Legal Status</li>
+							<li>General</li>
+							<li>Processing Information</li>
+							<li>Index</li>
+						</ol>
 						
-						<p><strong>Category 3:</strong> displayed elsewhere in record, so won't be in the Additional Description accordion</p>
+						<p><strong>Category 2:</strong> these notes are displayed elsewhere in record, so won't be in the Additional Description accordion</p>
 						<ul>
 							<li>Abstract(displays at top of record)</li>
 							<li>Conditions Governing Access (displays at top of record)</li>
@@ -166,7 +160,7 @@
 							<li>Preferred Citation (displays via modal accessed from icon at top of record)</li>
 						</ul>
 						
-						<p><strong>Another question for WG:</strong> Cory Nimer recommends showing Scope & Contents at the top of the record instead of Abstract (with a more link for long text). Would this be preferable?</p>
+						<p><strong>Another question for WG:</strong> Cory Nimer recommends showing Scope & Contents at the top of the record instead of Abstract (with a more link for long text). Would this be preferable? Need to determine WG's preference for default on the 12/10 call, though we recommend this is customizable.</p>
 					</div>
 			    </div>
 			  </dd><!-- / citation -->
@@ -297,7 +291,7 @@
 				<p><strong><a href="https://archivesspace.atlassian.net/browse/AR-1301">AR-1301</a> - The new finding aid subtitle field must display in the Public Interface:</strong> right now the subtitle only displays in the Administrative information section. Is this enough? Or should it display up top, just below the title? Should it show in the search results?</p>
 				<p><strong><a href="https://archivesspace.atlassian.net/browse/AR-1035">AR-1035</a> - As a repository archivist, I would like my container information to display with the syntax "Type + Indicator":</strong> we are not sure we have fully addressed (or even understand) this request.</p>
 				<p><strong><a href="https://archivesspace.atlassian.net/browse/AR-1063">AR-1063</a> - Show classifications on public interface resource overview page:</strong> is this what we are now calling "record groups"? Should this be included as an accordion item below "subjects" on the records?</p>
-				<p><strong><a href="https://archivesspace.atlassian.net/browse/AR-838">AR-838</a> - As an archivist, I would like the option to see a multi-level description in either the intellectual (level) or physical (container) arrangement:</strong> have we addressed this?</p>
+				<p><strong><a href="https://archivesspace.atlassian.net/browse/AR-838">AR-838</a> - As an archivist, I would like the option to see a multi-level description in either the intellectual (level) or physical (container) arrangement:</strong> have we addressed this? (Note: based on feedback from Cory Nimer, I have added a numerical inventory display to the expanded view of full contents and arrangements.)</p>
 			</div>
 			
 			
@@ -401,7 +395,7 @@
 	<!-- last updated line -->
 	<div class="row">
 		<div class="small-12 panel callout columns text-right">
-			<p>Last updated 12/2/15</p>
+			<p>Last updated 12/7/15</p>
 		</div>
 	</div>
 	<!-- /last updated line -->
@@ -427,9 +421,13 @@
 		<a class="close-reveal-modal" aria-label="Close">&#215;</a>
 	</div>	
 	<div id="contents-modal" class="reveal-modal contentsarrangement optionc" data-reveal aria-labelledby="Full contents & arrangement" aria-hidden="true" role="dialog">
-			<h4>Contents & Arrangement</h4>
-				<div id="inventory" class="content">
-					<div class="row">
+		<h4>Contents & Arrangement</h4>
+		<ul class="tabs" data-tab>	
+			<li class="tab-title"><a href="#intellectual">Intellectual/hierarchical arrangement</a></li>
+			<li class="tab-title"><a href="#boxinventory">Numerical inventory</a></li>
+		</ul>
+		&nbsp; <br />
+		<div class="row">
 						<div class="large-12 columns">
 							<div class="row collapse">
 								<div class="small-10 columns">
@@ -441,6 +439,9 @@
 							</div>
 						</div>
 					</div> <!-- / c&a search -->
+		<div class="tabs-content">
+			<div class="content active" id="intellectual">
+				<div id="inventory" class="content">
 					<ul class="no-bullet recordchildren">
 						<li><i class="fi-plus"> &nbsp; </i><span class="recordtype folder"><i class="fi-folder small"> </i>Series 1 </span>Record title which might be somewhat long
 							<p class="treeitemdesc">&nbsp; Dates: 1890-1899</p>
@@ -515,6 +516,50 @@
 						<p>Another option for this could be tabs at the top of the page (which we were trying to avoid, but this may be a good use case), one for Overview (which shows the record as is) and one for Contents/Arrangement, which displays the contents and arrangement similar to this: <a href="http://archives.nypl.org/mss/18400#detailed">http://archives.nypl.org/mss/18400#detailed</a></p>
 					</div>
 
+	</div>	
+			</div>
+			<div class="content" id="boxinventory">
+				<div>
+					<ul class="no-bullet recordchildren">
+						<li><span class="recordtype object"><i class="fi-book small"> </i> Box 1 Folder 1</span> Another record 
+							<p class="treeitemdesc">&nbsp; Dates: 1910-1911</p>
+							<p class="treeitemdesc">&nbsp; Any additional instance information set to display</p>									
+
+						</li>
+						<li><span class="recordtype object"><i class="fi-book small"> </i> Box 1 Folder 2</span> Another record 
+							<p class="treeitemdesc">&nbsp; Dates: 1910-1911</p>
+							<p class="treeitemdesc">&nbsp; Any additional instance information set to display</p>									
+
+						</li>
+						<li><span class="recordtype object"><i class="fi-book small"> </i> Box 1 Folder 3</span> Another record 
+							<p class="treeitemdesc">&nbsp; Dates: 1910-1911</p>
+							<p class="treeitemdesc">&nbsp; Any additional instance information set to display</p>									
+
+						</li>
+						<li><span class="recordtype object"><i class="fi-book small"> </i> Box 2 Folder 1</span> Another record 
+							<p class="treeitemdesc">&nbsp; Dates: 1910-1911</p>
+							<p class="treeitemdesc">&nbsp; Any additional instance information set to display</p>									
+
+						</li>
+						<li><span class="recordtype object"><i class="fi-book small"> </i> Box 2 Folder 2</span> Another record 
+							<p class="treeitemdesc">&nbsp; Dates: 1910-1911</p>
+							<p class="treeitemdesc">&nbsp; Any additional instance information set to display</p>									
+
+						</li>
+						<li><span class="recordtype object"><i class="fi-book small"> </i> Box 3 Folder 1</span> Another record 
+							<p class="treeitemdesc">&nbsp; Dates: 1910-1911</p>
+							<p class="treeitemdesc">&nbsp; Any additional instance information set to display</p>									
+
+						</li>
+						<li>Etc.</li>
+					</ul>
+					
+					<div class="panel callout">
+						<p>This is meant to address <strong><a href="https://archivesspace.atlassian.net/browse/AR-838">AR-838</a> - As an archivist, I would like the option to see a multi-level description in either the intellectual (level) or physical (container) arrangement.</strong></p>
+					</div>
+				</div>
+			</div>	
+		</div>
 	</div>
 	<!-- / modals -->
 
