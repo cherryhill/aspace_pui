@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ASpace PUI Wireframes | Search Results</title>
+    <title>ASpace PUI Wireframes | Overall Display - Unprocessed Material</title>
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/foundation-icons.css" />
     <link rel="stylesheet" href="css/aspace.css" />
@@ -19,8 +19,8 @@
     </div>
     <div class="row panel callout">
     	<div class="medium-6 large-6 columns">
-    		<h3>Search Results Page</h3>
-    		<p>This page represents the flat search results presented to the user.
+    		<h3>Overall Display - Unprocessed Material</h3>
+    		<p>This page represents the display of all unprocessed material in an ASpace instance.</p>
     	</div>
  		<div class="medium-6 large-6 medium-text-right columns">
  			<a href="index.html" class="button">Back to Table of Contents</a>
@@ -68,119 +68,100 @@
 
 	<!-- page content section -->
 
-	<!-- search -->
-	<div class="row first-row panel">
-		<p class="small-12 columns">Your search for <span class="searchterm1">Maria Mitchell</span> AND <span class="searchterm2">astronomy</span> yielded 153 results.</p>
-		<p class="medium-6 columns">Change number of results displayed at once:
-			<button href="#" data-dropdown="numberresults" aria-controls="numberresults" aria-expanded="false" class="button dropdown tiny">20</button><br>
-				<ul id="numberresults" data-dropdown-content class="f-dropdown" aria-hidden="true">
-					<li><a href="#">40</a></li>
-					<li><a href="#">60</a></li>
-					<li><a href="#">100</a></li>
-				</ul>
-		</p>
-		<p class="medium-6 columns">Sort by: 
-			<button href="#" data-dropdown="relevance" aria-controls="relevance" aria-expanded="false" class="button dropdown tiny">Relevance</button><br>
-				<ul id="relevance" data-dropdown-content class="f-dropdown" aria-hidden="true">
-					<li><a href="#">Title</a></li>
-					<li><a href="#">Date added</a></li>
-					<li><a href="#">Date of material</a></li>
-					<li><a href="#">Anything else?</a></li>
-				</ul>
-		</p>
-		<div class="medium-6 columns">
-			Search controls:
-			<ul class="button-group ">
-				<li><a href="01landing.html" class="button small">New search</a></li>
-				<li><a href="02searchresultsmodify.html" class="button small">Revise current search</a></li>
+		<!-- search -->
+		<div class="row panel">
+			<h3>Search the archives</h3>
+			
+			<div class="row">
+			<div class="medium-5 columns">
+			<form>
+					<input type="text" placeholder="Enter your search terms" />
+			</form>
+			</div>
+			<div class="medium-3 columns">
+			<button href="#" data-dropdown="recordtype" aria-controls="recordtype" aria-expanded="false" class="button dropdown tiny secondary">Search all record types</button><br>
+			<ul id="recordtype" data-dropdown-content class="f-dropdown" aria-hidden="true">
+			  <li><a href="#">Search collections</a></li>
+			  <li><a href="#">Search digital materials</a></li>
+			  <li><a href="#">etc. input needed</a></li>
 			</ul>
-		</div>
-		<div class="medium-6 columns text-right">	
-			Display search results as:
-			<ul class="button-group text-right">
-				<li><a href="02searchresults.html" class="button small fi-list-thumbnails disabled"> All items</a></li>
-				<li><a href="02searchresultstree.html" class="button small fi-page-multiple"> Collections</a></li>
-				<li><a href="02searchresultsgrid.html" class="button small fi-thumbnails"> Digital items</a></li>
+			</div>
+			<div class="medium-2 columns">
+			<button href="#" data-dropdown="fieldsearched" aria-controls="fieldsearched" aria-expanded="false" class="button dropdown tiny secondary">Keyword</button><br>
+			<ul id="fieldsearched" data-dropdown-content class="f-dropdown" aria-hidden="true">
+			  <li><a href="#">Creator</a></li>
+			  <li><a href="#">Notes</a></li>
+			  <li><a href="#">Subject</a></li>
+			  <li><a href="#">Title</a></li>
 			</ul>
+			</div>
+			<div class="medium-1 columns">
+			<a href="01landingB.html" class="button tiny secondary">+</a>
+			</div>
+			<div class="medium-1 columns">
+			<a href="02searchresults.html" class="button tiny">Search</a>
+			</div>
+			</div>
+			<div class="text-right"><p><a href="#" data-tooltip aria-haspopup="true" class="has-tip" title="Clicking this will take the user to a seprate page with helpful information on how to search.">Search help</a></p></div>		
 		</div>
-	</div>
-	<!-- / search -->
-
+		<!-- / search -->	
+			<p>&nbsp;</p>
+			
+			
 	<div class="row">
 
 <!-- main content -->
 
 		<div class="medium-9 columns">
-			<h2>Search results</h2>
+			<div class="row">
+				<div class="medium-10 columns">
+					<h2>Unprocessed material</h2>
+				</div>
+				<div class="medium-2 columns">
+					Sort by: <button href="#" data-dropdown="relevance" aria-controls="relevance" aria-expanded="false" class="button dropdown tiny">Title</button><br>
+							<ul id="relevance" data-dropdown-content class="f-dropdown" aria-hidden="true">
+								<li><a href="#">Date added</a></li>
+								<li><a href="#">Newest material</a></li>
+								<li><a href="#">Anything else?</a></li>
+							</ul>
+						</p>
+				</div>
+			</div>
 			
 			<div class="recordrow">
 				<h3><a href="03record-collection.html">Collection item title</a></h3>
 				<div class="recordtype"><span class="collection"><i class="fi-clipboard small"> </i> Collection</span> &nbsp; | &nbsp; <strong>Identifier:</strong> ABCDEFGHIJKL</div>
-				<div class="recordsummary">Maecenas faucibus mollis <span class="searchterm2">astronomy</span>. Maecenas sed diam eget risus varius blandit sit amet non magna. Vestibulum id ligula porta semper.</div>
+				<div class="recordsummary">Maecenas faucibus mollis astronomy. Maecenas sed diam eget risus varius blandit sit amet non magna. Vestibulum id ligula porta semper.</div>
 				<div class="recorddate"><strong>Date(s):</strong> 1903-1943</div>
 				<div class="recordcontext"><strong>Context:</strong> <a href="#">Repository name</a></div>
-				<div class="keywordscontext">
-					<dl class="accordion" data-accordion>
-						<dd class="accordion-navigation">
-							<a href="#panelcontents"><i class="fi-plus"> </i>Keywords in context</a>
-							<div id="panelcontents" class="content">
-								<ul class="recordchildren">
-									<li>...Zinner, Ernst, 1886-1970 <span class="searchterm2">Astronomy</span> -- History -- Sources The documents Zinner's...</li>
-									<li>...service. He returned to the field of <span class="searchterm2">astronomy</span> at the end of the war, becoming...</li>
-									<li>...a professor at Vassar College, <span class="searchterm1">Maria Mitchell</span>...</li>
-									<li class="smallnote">29 more references to search keywords</li>
-								</ul>
-								<a href="03record-collection.html" class="button">View collection</a>
-							</div>
-						</dd>
-					</dl>
-				</div>
 			</div>
 
 			<div class="recordrow">
-				<h3><a href="04landing-subject.html">Subject <span class="searchterm2">astronomy</span> item title</a></h3>
+				<h3><a href="04landing-subject.html">Subject astronomy item title</a></h3>
 				<div class="recordtype"><span class="subject"><i class="fi-price-tag small"> </i> Subject</span></div>
-				<div class="recordsummary">Maecenas <span class="searchterm1">Maria Mitchell</span> mollis interdum. Maecenas sed diam eget risus varius blandit sit amet non magna. Vestibulum id ligula porta semper.</div>
+				<div class="recordsummary">Maecenas Maria Mitchell mollis interdum. Maecenas sed diam eget risus varius blandit sit amet non magna. Vestibulum id ligula porta semper.</div>
 				<div class="recordcontext"><strong>Context:</strong> Appears in <a href="#">123 records (view all &raquo;)</a></div>
 			</div>
 
 			<div class="recordrow">
 				<div class="digitized"><i class="fi-photo large"></i><br /><a href="03record-object.html" class="button tiny">digitized material available</a></div>
-				<h3><a href="03record-object.html">Archival object <span class="searchterm1">Maria Mitchell</span> item title</a></h3>
+				<h3><a href="03record-object.html">Archival object Maria Mitchell item title</a></h3>
 				<div class="recordtype"><span class="object"><i class="fi-book small"> </i> Archival object</span> &nbsp; | &nbsp; <strong>Identifier:</strong> ABCDEFGHIJKL</div>
-				<div class="recordsummary">Maecenas faucibus mollis interdum. <span class="searchterm1">Maria Mitchell</span> sed diam eget risus varius blandit sit amet non magna. Vestibulum id ligula porta semper.</div>
+				<div class="recordsummary">Maecenas faucibus mollis interdum. Maria Mitchell sed diam eget risus varius blandit sit amet non magna. Vestibulum id ligula porta semper.</div>
 				<div class="recorddate"><strong>Date(s):</strong> c. 1943</div>
 				<div class="recordcontext"><strong>Context:</strong> <a href="#">Repository name</a> / <a href="#">Collection title</a> / <a href="#">Series 1: title</a> / <a href="#">Subseries 3C: title</a></div>
-				<div class="keywordscontext">
-					<dl class="accordion" data-accordion>
-						<dd class="accordion-navigation">
-							<a href="#panelcontents2"><i class="fi-plus"> </i>Keywords in context</a>
-							<div id="panelcontents2" class="content">
-								<ul class="recordchildren">
-									<li>...Zinner, Ernst, 1886-1970 <span class="searchterm2">Astronomy</span> -- History -- Sources The documents Zinner's...</li>
-									<li>...service. He returned to the field of <span class="searchterm2">astronomy</span> at the end of the war, becoming...</li>
-									<li>...a professor at Vassar College, <span class="searchterm1">Maria Mitchell</span>...</li>
-									<li class="smallnote">29 more references to search keywords</li>
-								</ul>
-								<a href="03record-object.html" class="button">View archival object</a>
-							</div>
-						</dd>
-					</dl>
-				</div>
 			</div>
 
 			<div class="recordrow">
 				<h3><a href="04landing-agent.html">Person item title</a></h3>
 				<div class="recordtype person"><i class="fi-address-book"> </i> Person</div>
-				<div class="recordsummary">Maecenas faucibus mollis interdum. Maecenas sed diam eget risus varius blandit sit amet non magna. <span class="searchterm2">Astronomy</span> id ligula porta semper.</div>
+				<div class="recordsummary">Maecenas faucibus mollis interdum. Maecenas sed diam eget risus varius blandit sit amet non magna. astronomy id ligula porta semper.</div>
 				<div class="recorddate"><strong>Date(s):</strong> 1818-1889</div>
 				<div class="recordcontext"><strong>Context:</strong> Appears in <a href="#">22 records (view all &raquo;)</a></div>
 			</div>
 
 			<div class="recordrow panel callout">
-				<h4>Relevance</h4>
-				<p>Working group needs to decide if changes should be made to relevance sorting.<br />
-				<a href="https://archivesspace.atlassian.net/wiki/display/ADC/Relevance+in+search+results">Please discuss here &raquo;</a> </p>
+				<p>Obviously not all of the data might be available in unprocessed material. Only the data that is available will display.</p>
 			</div>
 
 			<ul class="pagination" role="menubar" aria-label="Pagination">
@@ -194,14 +175,6 @@
 				<li><a href="">13</a></li>
 				<li class="arrow"><a href="">Next &raquo;</a></li>
 			</ul>
-			<p class="panel callout">For WG: Mark suggested the effect that is demonstrated if you hover over pager 4. <strong>Note that this would only be in place for Title, Date Added and Date Modified sorts, not for the Relevance sort.</strong> For Brian: While this seems like a good suggestion, we are unsure of what would be required to program it, and so if the WG likes this suggestion, we look to you to let us know if it can be implemented in Phase 1, or if this is a later project.</p>
-			
-			<p>&nbsp;</p>
-			
-			<div class="panel callout">
-				<h4>Additional questions for WG based on Jira Tickets</h4>
-				<p><strong><a href="https://archivesspace.atlassian.net/browse/AR-1293">AR-1293</a> - Sort Collections (Resources) on Staff and Public Interface by Identifier #:</strong> which ID is this ticket referring to? Is this a commonly desired element to include?</p>
-			</div>
 
 		</div>
 		
@@ -212,14 +185,6 @@
 		
 		<div class="medium-3 columns panel facetgroup">
 			<h2>Filter results</h2>
-			<span class="definition">Remove</span>
-			<h3 data-tooltip aria-haspopup="true" class="has-tip" title="These results include each term individually using the OR modifier.">Search terms <i class="fi-info"></i></h3>
-			<div class="facets">
-				<ul class="side-nav">
-					<li class="remove"><a href="#">Maria Mitchell</a></li>
-					<li class="remove"><a href="#">astronomy</a></li>
-				</ul>
-			</div>
 			<h3 data-tooltip aria-haspopup="true" class="has-tip" title="This filter narrow the results down based on the date the original object was created, authored, or otherwise came into existence. They do not correlate to when the record itself was created. Date searches may not be all inclusive because some dates are too vague to be machine readable. Those records cannot be caught by this filter.">Dates to include <i class="fi-info"></i></h3>
 			<div>
 				<form>
@@ -275,7 +240,7 @@
 	<!-- last updated line -->
 	<div class="row">
 		<div class="small-12 panel callout columns text-right">
-			<p>Last updated 12/2/15</p>
+			<p>Last updated 12/7/15</p>
 		</div>
 	</div>
 	<!-- /last updated line -->
