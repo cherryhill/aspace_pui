@@ -77,7 +77,7 @@
 		<div class="medium-9 columns">
 			<h2>Agent name</h2>
 			<div>
-				<span class="recordtype person"><i class="fi-address-book small"> </i> Person <i class="fi-info has-tip" data-tooltip aria-haspopup="true" title="Other agent types -- Corporate entity, Family, Software -- should use same color but different icons."> </i></span> &nbsp; &nbsp; <strong>Identifier:</strong> ABCDE12345FGHI
+				<span class="recordtype person"><i class="fi-address-book small"> </i> Person <i class="fi-info has-tip" data-tooltip aria-haspopup="true" title="Other Agent Roles -- Corporate entity, Family, Software -- should use same color but different icons."> </i></span> &nbsp; &nbsp; <strong>Identifier:</strong> ABCDE12345FGHI
 			</div><!-- / ID -->
 			<ul class="breadcrumbs">
 				<li class="current">Context:</li>
@@ -114,6 +114,7 @@
 				<li><a href="#">Notes</a></li>
 				<li><a href="#">Subject</a></li>
 				<li><a href="#">Title</a></li>
+			    <li><a href="#">Identifier</a></li>
 			</ul>
 		</div>
 		<div class="medium-1 columns">
@@ -131,12 +132,22 @@
 	</div>	
 	<!-- / search -->
 
-			<div class="recordrow">
+			<div class="recordrow panel">
 				<h3><a href="03record-collection.html">Collection item title</a></h3>
 				<div class="recordtype collection"><i class="fi-clipboard small"> </i> Collection</div>
 				<div class="recordsummary">Maecenas faucibus mollis astronomy. Maecenas sed diam eget risus varius blandit sit amet non magna. Vestibulum id ligula porta semper.</div>
 				<div class="recorddate"><strong>Date(s):</strong> 1903-1943</div>
 				<div class="recordid"><strong>Identifier:</strong> ABCDEFGHIJKL</div>
+				<div class="agenttype"><strong>Agent Role:</strong> Photographer</div>
+			</div>
+
+			<div class="recordrow panel">
+				<h3><a href="03record-collection.html">Collection item title</a></h3>
+				<div class="recordtype collection"><i class="fi-clipboard small"> </i> Collection</div>
+				<div class="recordsummary">Maecenas faucibus mollis astronomy. Maecenas sed diam eget risus varius blandit sit amet non magna. Vestibulum id ligula porta semper.</div>
+				<div class="recorddate"><strong>Date(s):</strong> 1903-1943</div>
+				<div class="recordid"><strong>Identifier:</strong> ABCDEFGHIJKL</div>
+				<div class="agenttype"><strong>Agent Role:</strong> Photographer</div>
 			</div>
 
 			<div class="recordrow">
@@ -145,6 +156,7 @@
 				<div class="recordsummary">Maecenas faucibus mollis astronomy. Maecenas sed diam eget risus varius blandit sit amet non magna. Vestibulum id ligula porta semper.</div>
 				<div class="recorddate"><strong>Date(s):</strong> 1903-1943</div>
 				<div class="recordid"><strong>Identifier:</strong> ABCDEFGHIJKL</div>
+				<div class="agenttype"><strong>Agent Role:</strong> Contributor</div>
 			</div>
 
 			<div class="recordrow">
@@ -153,6 +165,7 @@
 				<div class="recordsummary">Maecenas faucibus mollis astronomy. Maecenas sed diam eget risus varius blandit sit amet non magna. Vestibulum id ligula porta semper.</div>
 				<div class="recorddate"><strong>Date(s):</strong> 1903-1943</div>
 				<div class="recordid"><strong>Identifier:</strong> ABCDEFGHIJKL</div>
+				<div class="agenttype"><strong>Agent Role:</strong> Contributor</div>
 			</div>
 
 			<div class="recordrow">
@@ -161,6 +174,7 @@
 				<div class="recordsummary">Maecenas faucibus mollis astronomy. Maecenas sed diam eget risus varius blandit sit amet non magna. Vestibulum id ligula porta semper.</div>
 				<div class="recorddate"><strong>Date(s):</strong> 1903-1943</div>
 				<div class="recordid"><strong>Identifier:</strong> ABCDEFGHIJKL</div>
+				<div class="agenttype"><strong>Agent Role:</strong> Contributor</div>
 			</div>
 
 			<div class="recordrow">
@@ -169,6 +183,7 @@
 				<div class="recordsummary">Maecenas faucibus mollis astronomy. Maecenas sed diam eget risus varius blandit sit amet non magna. Vestibulum id ligula porta semper.</div>
 				<div class="recorddate"><strong>Date(s):</strong> 1903-1943</div>
 				<div class="recordid"><strong>Identifier:</strong> ABCDEFGHIJKL</div>
+				<div class="agenttype"><strong>Agent Role:</strong> Contributor</div>
 			</div>
 
 			<div class="recordrow">
@@ -177,14 +192,7 @@
 				<div class="recordsummary">Maecenas faucibus mollis astronomy. Maecenas sed diam eget risus varius blandit sit amet non magna. Vestibulum id ligula porta semper.</div>
 				<div class="recorddate"><strong>Date(s):</strong> 1903-1943</div>
 				<div class="recordid"><strong>Identifier:</strong> ABCDEFGHIJKL</div>
-			</div>
-
-			<div class="recordrow">
-				<h3><a href="03record-collection.html">Collection item title</a></h3>
-				<div class="recordtype collection"><i class="fi-clipboard small"> </i> Collection</div>
-				<div class="recordsummary">Maecenas faucibus mollis astronomy. Maecenas sed diam eget risus varius blandit sit amet non magna. Vestibulum id ligula porta semper.</div>
-				<div class="recorddate"><strong>Date(s):</strong> 1903-1943</div>
-				<div class="recordid"><strong>Identifier:</strong> ABCDEFGHIJKL</div>
+				<div class="agenttype"><strong>Agent Role:</strong> Contributor</div>
 			</div>
 
 			<ul class="pagination" role="menubar" aria-label="Pagination">
@@ -208,9 +216,6 @@
 <!-- sidebar -->
 		
 		<div class="medium-3 columns panel facets">
-			<div class="panel callout">
-				<p>WG: Should the Citation, Bookmark, Request and Print utilities appear here?</p>
-			</div>
 			<h3>More about Name</h3>
 			<dl class="accordion" data-accordion>
 			  <dd class="accordion-navigation">
@@ -259,6 +264,10 @@
 			  </dd><!-- / rights statement -->
 			</dl>
 
+			<div>
+				<p class="panel callout">Per suggestion from Scott Schwartz, records where the agent is a creator will display as featured prioritized before other records (and Agent Role is now the default sort for this display, followed by title). For this display only, Agent Role has been added to each collection listing.</p>
+			</div>
+
 		</div>
 
 <!-- / sidebar -->
@@ -278,7 +287,7 @@
 	<!-- last updated line -->
 	<div class="row">
 		<div class="small-12 panel callout columns text-right">
-			<p>Last updated 12/7/15</p>
+			<p>Last updated 12/15/15</p>
 		</div>
 	</div>
 	<!-- /last updated line -->

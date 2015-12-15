@@ -69,11 +69,24 @@
 	<!-- page content section -->
 
 
+
 	<div class="row">
 		<p>&nbsp;</p>
 
 
+		<ul class="tabs" data-tab>	
+			<li class="tab-title"><a href="#recorddetails">Record Details</a></li>
+			<li class="tab-title"><a href="#intellectual">Intellectual/hierarchical arrangement</a></li>
+			<li class="tab-title"><a href="#boxinventory">Numerical inventory</a></li>
+		</ul>
+
+		<div class="tabs-content">
+			<div class="content active" id="recorddetails">
+
+
 <!-- main content -->
+
+<!-- RECORD DETAILS -->
 
 		<div class="medium-8 columns">
 			<h2>Collection item title</h2>
@@ -283,16 +296,17 @@
 					</ul>
 			    </div>
 			  </dd><!-- / accession info -->
+			  <dd class="accordion-navigation">
+			    <a href="#repodetails"><i class="fi-plus"> </i>Repository Details &raquo;</a>
+			    <div id="repodetails" class="content">
+					<h4>Repository details</h4>
+					<p>Part of the <a href="04landing-repository.html">[Repo name here] repository</a>.</p>
+					<p><strong>Contact:</strong> contact info goes here, freeform set up in repository.</p>
+					<p><strong>Location:</strong> location info here.</p>
+					<p class="panel callout">This has been moved from here to the right sidebar (at the top) and back to here again a few times because different members of the working group would like to see it in different locations. Moved here because this seems to be the majority opinion.</p>
+			    </div>
+			  </dd>
 			</dl>
-			
-			<p>&nbsp;</p>
-			<div class="panel callout">
-				<h4>Additional questions for WG based on JIRA tickets</h4>
-				<p><strong><a href="https://archivesspace.atlassian.net/browse/AR-1301">AR-1301</a> - The new finding aid subtitle field must display in the Public Interface:</strong> right now the subtitle only displays in the Administrative information section. Is this enough? Or should it display up top, just below the title? Should it show in the search results?</p>
-				<p><strong><a href="https://archivesspace.atlassian.net/browse/AR-1035">AR-1035</a> - As a repository archivist, I would like my container information to display with the syntax "Type + Indicator":</strong> we are not sure we have fully addressed (or even understand) this request.</p>
-				<p><strong><a href="https://archivesspace.atlassian.net/browse/AR-1063">AR-1063</a> - Show classifications on public interface resource overview page:</strong> is this what we are now calling "record groups"? Should this be included as an accordion item below "subjects" on the records?</p>
-				<p><strong><a href="https://archivesspace.atlassian.net/browse/AR-838">AR-838</a> - As an archivist, I would like the option to see a multi-level description in either the intellectual (level) or physical (container) arrangement:</strong> have we addressed this? (Note: based on feedback from Cory Nimer, I have added a numerical inventory display to the expanded view of full contents and arrangements.)</p>
-			</div>
 			
 			
 		</div>
@@ -311,13 +325,6 @@
 					<li class="text-center"><a href="#"  data-tooltip aria-haspopup="true" class="has-tip" title="Clicking this icon triggers the browser's print function."><i class="fi-print medium"></i><br />Print</a></li>
 				</ul>
 			</div><!-- helpful icons -->
-
-			<div class="panel">
-				<h4>Repository details</h4>
-				<p>Part of the <a href="04landing-repository.html">[Repo name here] repository</a>.</p>
-				<p><strong>Contact:</strong> contact info goes here, freeform set up in repository.</p>
-				<p><strong>Location:</strong> location info here.</p>
-			</div>
 
 			<div class="contentsarrangement optionc panel">
 			<h4>Contents & Arrangement</h4>
@@ -366,9 +373,9 @@
 							<p class="treeitemdesc">&nbsp; Dates: 1810-1912</p>
 						</li>
 					</ul>
-					<p><a href="#" class="button" data-reveal-id="contents-modal">Open full contents & arrangement on its own</a></p>
+					<p><a href="#" class="button" data-tooltip aria-haspopup="true" class="has-tip" title="Clicking on this switches the user to the intellectual tab at the top.">Open full contents & arrangement on its own</a></p>
 					<div class="panel callout">
-						<p>This goes on as long as it needs to for the collection.</p>
+						<p>This goes on as long as it needs to for the collection, but only shows three levels of hierarchy. If the user wants to see more, the would open the full contents tab.</p>
 						<p>Each item <strong>links</strong> to the record.</p>
 						<p>This layout is largely based on the Princeton finding aids (<a href="http://findingaids.princeton.edu/collections/LAE035/c027">example</a>).</p>
 						<p>We explored <a href="03record-contentsarrangement.html"> other options</a> for the layout of Contents & Arrangement, and this is what the WG preferred.</p>
@@ -382,65 +389,48 @@
 <!-- / contents arrangement -->
 
 
-	<!-- /page content section -->
-
-
-
-
-<div class="spacer"><p> &nbsp; </p></div>
-
-
-
-	
-	<!-- last updated line -->
-	<div class="row">
-		<div class="small-12 panel callout columns text-right">
-			<p>Last updated 12/7/15</p>
-		</div>
-	</div>
-	<!-- /last updated line -->
-    
-	<!-- modals -->
-	<div id="citation-modal" class="reveal-modal" data-reveal aria-labelledby="Citation information" aria-hidden="true" role="dialog">
-		<h2 id="Citation information">Citation details</h2>
-		<p>{Identification of item}, Marta Mierendorff papers, Collection no. 0214, Feuchtwanger Memorial Library, Special Collections, USC Libraries, University of Southern California.</p>
-		<div class="button fi-page-copy"> Copy to clipboard</div>
-		<p class="panel callout">For Brian: WG would like this to work automagically with citation management systems such as zotero, etc.</p>
-		<a class="close-reveal-modal" aria-label="Close">&#215;</a>
-	</div>
-	<div id="bookmark-modal" class="reveal-modal" data-reveal aria-labelledby="Bookmark" aria-hidden="true" role="dialog">
-		<h2 id="Bookmark">You have bookmarked this record</h2>
-		<p>Your bookmarks are only stored for the duration of this browser session. If you leave this computer and return later, the bookmarks may not remain available.</p>
-		<a href="06utilities-bookmark.html" class="button fi-bookmark"> View all bookmarks</a>
-		<a class="close-reveal-modal" aria-label="Close">&#215;</a>
-	</div>
-	<div id="request-modal" class="reveal-modal" data-reveal aria-labelledby="Request this item" aria-hidden="true" role="dialog">
-		<h2 id="Request this item">Request access to this item</h2>
-		<p class="panel callout">For WG: this will be a simple form in Phase I, unless the institution has Aeon (in which case it will use that). What fields are needed for the Phase I form?</p>
-		<div class="button fi-telephone"> Submit request</div>
-		<a class="close-reveal-modal" aria-label="Close">&#215;</a>
-	</div>	
-	<div id="contents-modal" class="reveal-modal contentsarrangement optionc" data-reveal aria-labelledby="Full contents & arrangement" aria-hidden="true" role="dialog">
-		<h4>Contents & Arrangement</h4>
-		<ul class="tabs" data-tab>	
-			<li class="tab-title"><a href="#intellectual">Intellectual/hierarchical arrangement</a></li>
-			<li class="tab-title"><a href="#boxinventory">Numerical inventory</a></li>
-		</ul>
-		&nbsp; <br />
-		<div class="row">
-						<div class="large-12 columns">
-							<div class="row collapse">
-								<div class="small-10 columns">
-									<input type="text" placeholder="Search collection contents">
-								</div>
-								<div class="small-2 columns" data-tooltip aria-haspopup="true" class="has-tip" title="Patron can use this to refine what is listed in the inventory.">
-									<a href="#" class="button postfix">Search</a>
-								</div>
+<!-- /RECORD DETAILS -->
+			</div>
+			
+			<!-- INTELLECTUAL ARRANGEMENT --> 
+			<div class="content contentsarrangement optionc" id="intellectual">
+				<div class="row">
+					<div class="medium-8 columns">
+						<h2>Collection item title</h2>
+						<div>
+							<span class="recordtype collection"><i class="fi-clipboard small"> </i>Collection</span>  &nbsp; &nbsp; <strong>Identifier:</strong> ABCDE12345FGHI
+						</div><!-- / ID -->
+						<ul class="breadcrumbs">
+							<li class="current">Context:</li>
+							<li><a href="04landing-repository.html">Repository name</a></li>
+							<li><a href="#">Collection title</a></li>
+							<li class="unavailable"><a href="#">Intellectual/hierarchical arrangement</a></li>
+						</ul>	
+					</div>
+					<div class="medium-4 columns">
+						<div>
+							<ul class="small-block-grid-4">
+								<li class="text-center"><a href="#" data-reveal-id="citation-modal"><i class="fi-page-copy medium"></i><br />Citation</a></li>
+								<li class="text-center"><a href="#" data-reveal-id="bookmark-modal"><i class="fi-bookmark medium"></i><br />Bookmark</a></li>
+								<li class="text-center"><a href="#" data-reveal-id="request-modal"><i class="fi-telephone medium"></i><br />Request</a></li>
+								<li class="text-center"><a href="#"  data-tooltip aria-haspopup="true" class="has-tip" title="Clicking this icon triggers the browser's print function."><i class="fi-print medium"></i><br />Print</a></li>
+							</ul>
+						</div><!-- helpful icons -->
+					</div>	
+				</div>	
+				<div class="row">
+					<div class="large-12 columns">
+						<div class="row collapse">
+							<div class="small-8 columns">
+								<input type="text" placeholder="Search collection contents">
+							</div>
+							<div class="small-4 columns" data-tooltip aria-haspopup="true" class="has-tip" title="Patron can use this to refine what is listed in the inventory.">
+								<a href="#" class="button postfix">Search</a>
 							</div>
 						</div>
-					</div> <!-- / c&a search -->
-		<div class="tabs-content">
-			<div class="content active" id="intellectual">
+					</div>
+				</div> <!-- / c&a search -->
+
 				<div id="inventory" class="content">
 					<ul class="no-bullet recordchildren">
 						<li><i class="fi-plus"> &nbsp; </i><span class="recordtype folder"><i class="fi-folder small"> </i>Series 1 </span>Record title which might be somewhat long
@@ -512,13 +502,51 @@
 						</li>
 					</ul>
 					<div class="panel callout">
-						<p>This can either open as a modal, as represented here, or as a separate page with a breadcrumb at the top pointing back to the collection. Which this does depends both on what Brian says is readily able to be developed and what the WG prefers.</p>
-						<p>Another option for this could be tabs at the top of the page (which we were trying to avoid, but this may be a good use case), one for Overview (which shows the record as is) and one for Contents/Arrangement, which displays the contents and arrangement similar to this: <a href="http://archives.nypl.org/mss/18400#detailed">http://archives.nypl.org/mss/18400#detailed</a></p>
+						<p><strong>For Jungleen when designing:</strong> Please think farther down in the hierarchy than simply three levels. Example of the level of depth to consider: <a href="http://pui.archivesspace.org/repositories/10/archival_objects/21964">http://pui.archivesspace.org/repositories/10/archival_objects/21964</a> (from Mark Custer, feel free to ask him questions if you have them).</p>
+						<p>We are still working on the overview, which displays the contents and arrangement similar to this: <a href="http://archives.nypl.org/mss/18400#detailed">http://archives.nypl.org/mss/18400#detailed</a> (this may be more of a phase II item, to be discussed with Brad).</p>
 					</div>
 
 	</div>	
 			</div>
-			<div class="content" id="boxinventory">
+			<!-- /INTELLECTUAL ARRANGEMENT --> 
+			<!-- INVENTORY ARRANGEMENT --> 
+			<div class="content contentsarrangement optionc" id="boxinventory">
+				<div class="row">
+					<div class="medium-8 columns">
+						<h2>Collection item title</h2>
+						<div>
+							<span class="recordtype collection"><i class="fi-clipboard small"> </i>Collection</span>  &nbsp; &nbsp; <strong>Identifier:</strong> ABCDE12345FGHI
+						</div><!-- / ID -->
+						<ul class="breadcrumbs">
+							<li class="current">Context:</li>
+							<li><a href="04landing-repository.html">Repository name</a></li>
+							<li><a href="#">Collection title</a></li>
+							<li class="unavailable"><a href="#">Numerical inventory</a></li>
+						</ul>	
+					</div>
+					<div class="medium-4 columns">
+						<div>
+							<ul class="small-block-grid-4">
+								<li class="text-center"><a href="#" data-reveal-id="citation-modal"><i class="fi-page-copy medium"></i><br />Citation</a></li>
+								<li class="text-center"><a href="#" data-reveal-id="bookmark-modal"><i class="fi-bookmark medium"></i><br />Bookmark</a></li>
+								<li class="text-center"><a href="#" data-reveal-id="request-modal"><i class="fi-telephone medium"></i><br />Request</a></li>
+								<li class="text-center"><a href="#"  data-tooltip aria-haspopup="true" class="has-tip" title="Clicking this icon triggers the browser's print function."><i class="fi-print medium"></i><br />Print</a></li>
+							</ul>
+						</div><!-- helpful icons -->
+					</div>	
+				</div>	
+				<div class="row">
+					<div class="large-12 columns">
+						<div class="row collapse">
+							<div class="small-8 columns">
+								<input type="text" placeholder="Search collection contents">
+							</div>
+							<div class="small-4 columns" data-tooltip aria-haspopup="true" class="has-tip" title="Patron can use this to refine what is listed in the inventory.">
+								<a href="#" class="button postfix">Search</a>
+							</div>
+						</div>
+					</div>
+				</div> <!-- / c&a search -->
 				<div>
 					<ul class="no-bullet recordchildren">
 						<li><span class="recordtype object"><i class="fi-book small"> </i> Box 1 Folder 1</span> Another record 
@@ -559,8 +587,46 @@
 					</div>
 				</div>
 			</div>	
+			<!-- /INVENTORY ARRANGEMENT --> 
+		</div>
+
+
+	<!-- /page content section -->
+
+
+<div class="spacer"><p> &nbsp; </p></div>
+
+
+
+	
+	<!-- last updated line -->
+	<div class="row">
+		<div class="small-12 panel callout columns text-right">
+			<p>Last updated 12/15/15</p>
 		</div>
 	</div>
+	<!-- /last updated line -->
+    
+	<!-- modals -->
+	<div id="citation-modal" class="reveal-modal" data-reveal aria-labelledby="Citation information" aria-hidden="true" role="dialog">
+		<h2 id="Citation information">Citation details</h2>
+		<p>{Identification of item}, Marta Mierendorff papers, Collection no. 0214, Feuchtwanger Memorial Library, Special Collections, USC Libraries, University of Southern California.</p>
+		<div class="button fi-page-copy"> Copy to clipboard</div>
+		<p class="panel callout">For Brian: WG would like this to work automagically with citation management systems such as zotero, etc.</p>
+		<a class="close-reveal-modal" aria-label="Close">&#215;</a>
+	</div>
+	<div id="bookmark-modal" class="reveal-modal" data-reveal aria-labelledby="Bookmark" aria-hidden="true" role="dialog">
+		<h2 id="Bookmark">You have bookmarked this record</h2>
+		<p>Your bookmarks are only stored for the duration of this browser session. If you leave this computer and return later, the bookmarks may not remain available.</p>
+		<a href="06utilities-bookmark.html" class="button fi-bookmark"> View all bookmarks</a>
+		<a class="close-reveal-modal" aria-label="Close">&#215;</a>
+	</div>
+	<div id="request-modal" class="reveal-modal" data-reveal aria-labelledby="Request this item" aria-hidden="true" role="dialog">
+		<h2 id="Request this item">Request access to this item</h2>
+		<p class="panel callout">For WG: this will be a simple form in Phase I, unless the institution has Aeon (in which case it will use that). What fields are needed for the Phase I form?</p>
+		<div class="button fi-telephone"> Submit request</div>
+		<a class="close-reveal-modal" aria-label="Close">&#215;</a>
+	</div>	
 	<!-- / modals -->
 
 
