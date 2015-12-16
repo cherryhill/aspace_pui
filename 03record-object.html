@@ -375,8 +375,41 @@
 	</div>
 	<div id="request-modal" class="reveal-modal" data-reveal aria-labelledby="Request this item" aria-hidden="true" role="dialog">
 		<h2 id="Request this item">Request access to this item</h2>
-		<p class="panel callout">For WG: this will be a simple form in Phase I, unless the institution has Aeon (in which case it will use that). What fields are needed for the Phase I form?</p>
+		<p class="panel callout">For developer: this is a simple form in Phase I, unless the institution has Aeon (in which case it will use that).</p>
+		<form>
+			<div>
+				<label>Your name
+					<input type="text">
+				</label>
+			</div>
+			<div>
+				<label>How do we contact you?
+					<input type="text" placeholder="Please provide phone number and/or email address">
+				</label>
+			</div>
+			<div>
+				<p class="panel"><strong>Citation of item being requested:</strong><br />
+					{Identification of item}, Marta Mierendorff papers, Collection no. 0214, Feuchtwanger Memorial Library, Special Collections, USC Libraries, University of Southern California.</p>
+			</div>
+			<div>
+			     <label>Notes or message
+			        <textarea></textarea>
+			     </label>
+			</div>
+			<div>
+				<label>Are you planning to come onsite to use the collection?</label>
+				<input id="checkbox1" type="checkbox"><label for="checkbox1">Yes, I will be coming onsite.</label>
+				<label>If yes, please indicate when you anticipate being here
+					<input type="text" placeholder="For developer: if this can be a date/time picker, that may be easier for the user">
+				</label>
+			</div>
+			<div>
+				<label>Are you interested in obtaining copies or digital scans for offsite use?</label>
+				<input id="checkbox2" type="checkbox"><label for="checkbox2">Yes, and I understand that there may be access restrictions or use guidelines.</label>
+			</div>
+		</form>
 		<div class="button fi-telephone"> Submit request</div>
+		<p class="panel callout"><strong>For developer:</strong> On the backend, it would be helpful if the e-mail that was sent would include the full descriptive entry or at least a link to it as well as the information that the patron provided. There would need to be some configurability in the content of the form, though, to fit with institutional services. (Note from Cory Nimer.)</p>
 		<a class="close-reveal-modal" aria-label="Close">&#215;</a>
 	</div>	
 	<!-- / modals -->
