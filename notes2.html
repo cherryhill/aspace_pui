@@ -1,0 +1,84 @@
+NOTES FROM MARK RE: RECORD WIRES
+
+XXX mark.custer [1:46 PM] 
+@rain, @cnimer :  i'd go further and say that the barcode doesn't need to display at all by default, or even need to have a configuration option.  if really needed, someone could display it with a local plugin...  but i don't see it as being necessary in the interface.  That said, it might be an element in the HTML behind the scenes, so that you can easily pass it to a system like Aeon.
+
+XXX mark.custer [1:50 PM]
+now that I've just typed that, though, I remember that the ASpace data model doesn't require a container 1 number field...  it could just have a barcode.  i don't know of anyone who does this, but in those cases I think you need to display the barcode (if you had more than one box attached to any level of description, for instance, there'd probably need to be some easy way to represent that if the container 1 number values were missing).  so.....  perhaps the default behavior could be:  if container 1 has a number value, display that; if it doesn't, then display the container 1 barcode value (it has to have one or the other, so that should cover all of the cases).  i just don't see why displaying a barcode is necessary if there's a box number.
+
+****COME BACK TO THIS!****
+XXXmark.custer [1:57 PM] 
+as for the breadcrumbs, i'm partial to combining the unitids with the unittitles, as done by Princeton.  I also like that the Princeton context tree (on the left-hand side) goes one step further and combines the unitid, the unittitle, and the unitdate.  @cnimer in BYU's example, it's confusing to me that the last two breadcrumbs represent the same level of description, i.e. unitid > unittitle.  However, i do  like how you expand your call numbers at  the lower levels (e.g.  Vault MSS 76 Series 2 Subseries 3)... and I like that you use the term call number instead of identifier :simple_smile:
+
+XXX mark.custer [2:03 PM] 
+@rain, all:  i'm not sure i like having the abstract and the scope and contents note right next to each other.  in many repositories, it's become common practice over the years to write the scope and contents note so that the first paragraph of that can be re-purposed as the abstract.   that's not always true, of course, but i think that we'll need to consider that.  but, i think it can work...  here's an example: http://sova.si.edu/record/AAA.tannhenr
+
+XXX mark.custer [2:05 PM]
+but note how that differs from this view of the same finding aid, where they decided to show the summary on one tab, and the entire scope and contents note on the other tab:  http://www.aaa.si.edu/collections/henry-ossawa-tanner-papers-9229  just something to consider if we wind up having those two notes show at the top by default. (edited)
+IGNORING: We are trying to do this without tabs, since we are using accordions and reveals, and adding tabs to the mix might be too much.
+
+XXX mark.custer [2:08 PM]
+@rain, i love the inclusion of the digital image at the collection-level record.  i think it would be nice for this to auto-populate, but to also give the archivist a chance to switch out the image for something more representative.  if that's done, it might also be nice to have a way to view all digitized material (or a note about how much material in the collection is or is not digitized).
+
+****COME BACK TO THIS! (will need to do an A/B option)****
+XXXmark.custer [2:14 PM] 
+@rain:  i'm not yet sold on having all of that descriptive information collapsed by default, but i generally like the organization....  although i still don't know the best place for that "browse contents" section.  i worry that it would be lost if put on the right-hand side under the repository information.  i also worry that researchers might not see it in its current location, especially if it's collapsed.  outside of ASpace, a lot of finding aid sites have included that hierarchical information in a column on the left-hand side of the screen.   i don't think that it needs to be there, but i wonder if you have toyed around with that option, as well?
+
+XXXmark.custer [2:15 PM]
+i also think that this warrants testing with the test courpus.  will those collapsed fields open up if someone uses search terms to discover that collection, for instance?
+IGNORING: these are not search screens. These are the end destination (for that level).
+
+XXX mark.custer [2:43 PM] 
+lastly, there are 29 different notes that can appear at any level of description.  only a few of those have been accounted for so far, it seems (e.g. scope and contents, abstract, conditions governing access, and preferred citation).  i'd like to know where the rest will display, as well as if we can configure a default order of those notes?  right now, i believe that the public interface just displays those notes in whatever order they appear in the staff interface.
+
+****COME BACK TO THIS!****
+@rain:  also, regarding the Record Display - Folder wireframe, that shouldn't be needed at all.  Ideally, the record displays for all levels should be pretty much the same (since all levels of description can have the same descriptive information attached).  Additionally, archivists wouldn't call a Folder a level of description, but instead we'd refer to that as a file.  Because of that, I think it would make sense to have wireframes that illustrate 1) a collection-level page that has children, 2) a series-level page that has children, and 3) a file-level page that doesn't have any children.  Using a finding aid from the test corpus as an example, that would mean having a wireframe for this collection-level page, http://pui.archivesspace.org/repositories/9/resources/15, this series-level page, http://pui.archivesspace.org/repositories/9/archival_objects/13241, and this file-level page, http://pui.archivesspace.org/repositories/9/archival_objects/14446.  The folder is just a container, and doesn't automatically equate to a single-level of description (in this case, for instance, that file-level page describes folders 8-9 in box 66).
+
+****COME BACK TO THIS!****
+mark.custer [1:52 PM]
+Regarding external documents, I can think of two major uses:  1) to provide a document that's an additional finding aid (e.g. attaching a scanned PDF of a box listing that hasn't been added to ASpace, or an Excel file, or even a link to another database, for instance, that might have millions of emails indexed outside of ASpace), and 2) to provide access to a digitized surrogates of that material (most likely a PDF file living on a web accessible server somewhere, and for some reason it hasn't made it into a full-fledged digital library).
+External document links on agent records might have other uses, such as linking to a family tree, bio, etc., that can't easily be managed in ASpace.
+
+
+XXXNOTES FROM MARK RE: SEARCH WIRES
+
+XXX mark.custer [11:55 AM] 
+@rain: i agree that the "modify search" and "search within results" buttons are confusing in the static images.  we looked at this in more detail as a local group and decided not to discuss until we actually had a working prototype.
+
+XXXBRIAN mark.custer [11:57 AM]
+all that said, i have some additional feedback about the search result screens:  first, there is a strong preference to do away with the default OR operator that solr is using by default.  we discussed that AND would be preferable, but it seems that solr allows even more (and probably better) variations between those two binary options by using its mm parameter ("minimum match").  i'll follow up with Brian about that on the appropriate wiki page. (edited)
+
+XXXrain [12:00 PM] 
+@mark.custer: sounds good. Perhaps all that is needed is “modify search,” since that can also include searching within results. We can discuss on the call.
+
+XXX BRIAN mark.custer [12:00 PM] 
+second, in addition to having the AND, OR, and NOT operators, we'd love to see a NEAR operator!  i don't know if solr uses one of these out of the box, but i know that you can do proximity searchers with solr, so hopefully a standard NEAR option would be easy enough to add.  right now, for example, our EAD finding aid database has a NEAR option.  when that option is selected, the following message pops up:  "A NEAR search looks for search terms within 10 words of each other. For NEAR searches, the field type is automatically set to Keyword."
+
+XXXrain [12:01 PM] 
+That’s an interesting idea, but that goes into @kopfschmerzen realm in terms of what is doable with solr.
+
+XXXrain [12:05 PM]
+Will definitely ask him about that, as well!
+
+XXX mark.custer [12:06 PM] 
+third, in terms of the "sort by" options, we liked the idea of perhaps changed the created label to something like "recently added", or "date added."  we also weren't sure if keeping "modified" would be good, since the records can be modified for a whole host of reasons, but there's nothing in the interface to alert the user, for example, that just a simple spelling mistake was corrected.  ditto for "record type."  i understand faceting on record type, but I don't know of a good use case for sorting the results that way.  we also really like adding options to sort by the date of the material (not currently possible in ASpace).  as for sorting by title, it's a bit like sorting apples and oranges since it's only the collection level records that get a finding aid filing title (or at least have the option of a filing title, which is what is currently used in the ASpace search results, if it has been assigned), which is meant to help sorting by title.  the archival object components, on the other hand, are going to sort strangely since they'll contain initial articles, not always have inverted names, etc. (edited)
+
+XXX mark.custer [12:13 PM] 
+fourth, and this might be overly difficult to do, but we had a suggestion that it would be great if the paginated set of result numbers could actually give you a span of what's available.  for example, if you sorted by title and hovered over page 4, then it might be helpful to have a pop up that reads "Daytime TV Magazine collection to Dewey (George) papers".
+
+XXX mark.custer [12:18 PM] 
+fifth, i believe Cory already mentioned this, but we'd like to see the dates of material in the search results (and it looks like those are there now!).  Also, it might be good to include the level of description in the search results.  Furthermore, is the intention to show "keywords in context "in this mockup?  if so, would those keywords also be included for fields that don't display somewhere under the breadcrumbs in the context header?..  for instance, if the only keyword within a search result appeared in a bibliography note, would that show up somewhere in the search result?
+
+XXX rain [12:32 PM] 
+All good notes, thank you for the list in 3. I had overlooked that in the wires and will hopefully correct that before the call tomorrow. Points 2, 4 and 5 are all good topics to bring up on the call tomorrow when @kopfschmerzen is also part of the conversation.
+
+
+---------------------------
+
+XXXMore notes from meeting on 11/12/15 and elsewhere:
+
+Single Scroll Mode: 
+http://archives.nypl.org/mss/18400#detailed
+
+
+

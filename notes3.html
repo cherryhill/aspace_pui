@@ -1,0 +1,100 @@
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Final wireframe change notes</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/aspace.css" />
+    <script src="js/vendor/modernizr.js"></script>
+  </head>
+  <body>
+
+	  <div class="row">
+	  
+		<h1>Final wireframe change notes after 12/10 meeting</h1>
+		
+		<p><em>(culled from Slack and Confluence, check those channels for original notes)</em></p>
+	
+		<h2>BIGGER PICTURE</h2>
+		
+		<h3>Record Group changes</h3>
+		
+		<p>(overall and landing)
+		look at details that cate and scott sent over
+		CATE: on Classifications: this is a screenshot from our current Classifications landing page on the public side; the default sort is alphabetical, but the preferred sort would be sequential following the record group hierarchy (i.e. Alumni Association is RG 34, so it should sort to the 34th position in the list).<br />
+		CATE: This actually introduces a separate issue with Classifications, though.  We use Classifications here for our university record group structure, but we also use them in other special collections for subunits of the collection.  For example, in the list here, 'Avant Writing Collection' is not part of the university RG structure--it's a subunit of our Rare Books and Manuscripts (RBMS) Library.  About 1/3 of the our RBMS collections form the Avant Writing Collection sub-unit, so we're applying a classification to those records as a way to "group" them withing ASpace, when we need to work with just that subunit of records.  However, since this subunit has no relationship to the record group structure that we're also using Classifications for, these should never interfile (and maybe not even list together at all)--it looks like on the wireframe right now that there's no way to limit Classifications by repository(?).<br />
+		SCOTT:Yesterday I was asked to provide a series of screen shots of how the classification/record group function works within Archon which is significantly different from how such a classification functionality would operate in in the Aspace wireframes.  Below are three images that illustrate how the classification hierarchy works.  The first image identifies all of the administrative units within the University and they are represented with the first of three number strings.  The second image identifies all of the University Presidents which are organized "chronologically" by their term of office during the life of the University.  These presidential administrations are identified by the second set of numbers of classification string.  The third image identifies all of the programs/projects/etc associated with that president's administration.  These are associated with the third set of numbers in the classification string.  When someone opens the "browse-like" functionality of Archon to look at things via classification, they get the first list.  If someone clicks on President they are taken to another list of all subgroups associated with the Office of the President.  Clicking on the John M. Gregory link will take you to the third list which includes a listing of all record series associated with the President Gregory's tenure at the University of Illinois.  With just three simple mouse clicks one can get quick to a specific record series without even having to execute a keyword search.  Once an individual has identified the specific record series they're seeking, they can click on this link (e.g., 2/1/1 John M. Gregory Papers 1838-1898) and go directly to the collection record for this particular record series. https://archivesspace.atlassian.net/wiki/display/ADC/Wireframes</p>
+		
+		<h3>Tabs for Contents & Arrangements moved onto Record as well</h3>
+		
+		<h3>Repository landing page changes</h3>
+		
+		<h3>Single scroll view</h3>
+		
+		<p>MARK: we still need (the single-scroll view would have all of the notes, etc., and not just titles and dates).  What do others on the group think about this?  Are you content to have a PDF view for this, or are there other ideas?  Personally, I was hoping to have a single-scroll view in HTML that could be rendered into PDF on the fly (and cached by the application for those larger finding aids).<br />
+		And when I say single-scroll view, I'm referring to the full-resource view that's listed on the wireframes page (i.e. "Full-resource view (still need to make sure we understand what needs to be presented with this)"<br />
+		CORY: Here at BYU we actually prefer having the default single component view as in the current design, though I know that some user groups would prefer single-scroll view (historians, heavy archival users, staff users). I think decisions on which of these two views to implement by default will be driven by each repository's local audience, and might need to be something that is configurable in individual installations<br />
+		CORY: The PDF (or HTML) option should also remain available (is this through the print button in the wireframes?) as another way to get the full, single-scroll experience.<br />
+		DISCUSSED WITH BRAD: this may be more of a phase II item.
+		</p>
+		
+		<hr />
+		
+		<h2>SMALLER NOTES</h2>
+		
+		<p><strong>DONE</strong> Mark & Cory: Scope vs. Abstract - use scope in record / abstract in search resutls (and where there is no abstract, use beginning of scope) 
+		CATE: Scope & contents vs. Abstract displaying at the top: I think this comes down to local practice; our preference here is for the abstract over the s&c--can the choice of what note goes there be set as a configurable option?</p>
+		
+		<p><strong>DONE</strong> Mark: we thought that "All Items" could probably be changed to something like "All Results" (items is a term that could be confused with individual documents).</p>
+		
+		<p><strong>DONE</strong> Mark: search options (all / grid / tree), mouse-overs that expand on labels detailing what those display result buttons are/do</p>
+		
+		<p><strong>DONE</strong> Mark: The text "Display search results as" was confusing to most...   one suggestion was "Show only", but I suppose that wouldn't work with the "All Items/Results" option.   Again, this might just be something that we toy with come local implementation time, but I'd love to hear other feedback / suggestions.</p>
+		
+		<p><strong>SKIPPING (check in A/B testing)</strong> -- Mark: It was also suggested that the "Search Controls" were floated to the right, instead, with the "Display search results as" section took the left-hand side.  to me, though, that's just something that we should ideally do some A/B testing early next year (along with a few other placement options).</p>
+		
+		<p><strong>SEE HOME PAGE DESIGN / CUSTOMIZABLE</strong> -- Mark: Footer -- we also wanted to know if there was a suggestion for library-specific footer information (e.g. links to other online catalogs, library info, feedback, etc.)  / or even a place to highlight that search results existed in other systems, like an OPAC, within ASpace's search-result screen.</p>
+		
+		<p><strong>DONE</strong> Cory: Looking at the bug report, it appears that the original issue was that the types and indicators were separated in the display. In the current version this has been fixed somewhat bringing them together, but I hope that we would stick with the simpler "Box 1 Folder 2" entry rather than the current display. While I like the current location of these entries in the Record Item Title display wireframes, am I remembering right that these were meant to be placed in the Physical Storage and Access Information heading?
+		rain [10:33 AM] <br />
+		Yes, in the regular listing. In the numerical listing, it’ll be right next to the title.
+		On the record, it is right up at the top.<br />
+		On the record and on the search results.<br />
+		cnimer [10:35 AM] <br />
+		What is going in the Physical Storage and Access Information subheading then? Right now it is just lorem ipsum, but in the initial wireframes the box/folder location was in that section.<br />
+		rain [10:35 AM] <br />
+		Oh, yes, it would be displaying there, as well.</p>
+		
+		<p>Cory: @rain: For the request feature, I would suggest that the form should include contact information, a citation for the item being requested, and perhaps a note/comment field for other information. It might also be useful to have them indicate whether they are wanting to use the collection onsite (providing a scheduling calendar to indicate the anticipated date/time of their visit), or whether they are interested obtaining copies/digital scans for offsite use (with some sort of order fulfillment guidelines). On the backend, it would be helpful if the e-mail that was sent would include the full descriptive entry or at least a link to it as well as the information that the patron provided. There would need to be some configurability in the content of the form, though, to fit with institutional services.</p>
+		
+		<p>Cory: On the bookmarks page, if the user clicks on the request button would all the items be requested, or is some selection button needed?</p>
+		
+		<p>Mark: * contents & arrangement div: almost everyone expected to see this on the left-hand side of the screen, not the right.  can you talk about the decision process for putting this on the right?  i think i get it, but it's one of those things that will be hard to evaluate until we have a functioning PUI.</p>
+		
+		<p>Mark: * contents & arrangement div:  there was also a lot of concern that these trees might take up a lot of space.  one thought was that the titles and dates could be combined into the same line(s).  i know this was discussed before, but just throwing it out there again, since i want to make sure that we take into account when a component has a date but no title.(edited)</p>
+		
+		<p><strong>DONE</strong> Mark: Also:  there was consensus at Yale that the Repository Details box takes up a lot of valuable real-estate (especially for installations of ASpace that just have a single repository).  Therefore, we wondered about moving this section into the Accordion section, having it collapsed by default.  Doing that would also make the contents & arrangement section a lot more prominent. </p>
+		
+		<p>Cate: On the Subject landing page (for a specific subject record), I don't understand the role of the content in the the 'More about Subject' box, especially as broken out by subdivision.  Is the intention that this landing page only takes you to the base subject and all of the subdivisions (when a subject is complex and has them) are separated into that menu?  When a subject is complex (i.e. has a subdivision string), it should be maintained always as a string--the entire string is actually the subject.  What may be more helpful in that side 'More about Subject' box would be a list of other subjects with the same base (but subdivided differently)--i.e. "related" subjects (?)</p>
+		
+		<p>Mark: Jungleen Bae, Rain Michaels, I wanted to mention that I really like that you've gone with no indention in the Contents & Arrangement section as seen on this page:  http://cherryhill.github.io/aspace_pui/design-elements/20151208/Record_Display_v2.jpg.  I haven't seen that approach yet, but I think that it works really well!  I wonder how it will look and feel if the hierarchy is much deeper, though, or is the idea that only the first few levels of hierarchy could be opened on this page, and that everything would be available when a user clicks the "Open Full Contents..." button?  If a user can go as deep as needed on this page, could you provide a design mockup of what a collection like the Newel Kimball Whitney papers in the Test Corpus would look like... specifically this portion: http://pui.archivesspace.org/repositories/10/archival_objects/21964  </p>
+		
+		<p>Brian: I think the appearance of search terms in the filters will need to be rethought a bit since we are using advanced queries. In the example in the wireframes, the two terms in the filter column are "Maria Mitchell" and "astronomy". But each of these will have been bound to a field by the user, and they will be related by an operator. One option would be to treat the entire composite query as a single filter (probably the easiest). Another would be to make the filter more like a query editor, but then this will be redundant with the "Revise current search" feature.</p>
+		
+		<hr />
+		
+		<h2>PHASE II NOTES:</h2>
+		
+		<p><em>(won't all be integrated into wireframes)</em></p>
+		
+		<p>Mark: *Contents should be just descendants of the current component and be labeled "Contents", always relative to the thing being looked at - Arrangement of the rest of the collection is the Context Tree and its purpose is primarily navigation should be displayed wherever navigational aids are displayed and not where the contents of the resource currently being viewed are displayed. Contents (description of what I'm currently looking at and its children) vs. Context (overall hierarchy of the resource for navigational purposes).  So in this scenario, if you're on a page that represents a subseries, you'd see that subseries highlighted in the context tree (along with its siblings, parent series, etc.), and at the bottom of that page you'd see information about all of the descendants that represent the contents of that subseries.  (rather than having that information in the context tree on the side of the page).  I realize that this is a dramatic departure from how the system currently works, but i mention it because I'd love feedback on this approach (not that I think we should change course at this point, but it could be something worth comparing in 2016).</p>
+		
+		<p>Mark: *General: We're not certain of the need for the item pages for every single component (despite the fact that this has always been possible in ASpace, it's not something available in every archival system that we talked about, such as NYPL's site). It seems like a lot of potentially not useful information for browsing and is really only useful when the component is available digitally. Or if there are component pages, perhaps it would be good not to force people to go to them if they're seeing the same thing in the contextual display of the entire finding aid.  In other words, the single-scroll view (traditional, perhaps, but hopefully jazzed up like the NYPL finding aids) would be the primary view, not the individual component pages.  The latter could still be available, of course, they'd just be pushed into a secondary, supporting role.</p>
+		
+		<p>Scott: alpha navigation on the Repository landing page.</p>
+		
+		<p>Per discussion with Brad, single scroll view may be moved here. Will see if we have time before Friday to still come up with a recommendation in the wireframes even though development may not be Phase I.</p>
+		
+	  </div>
+	</body>
+</html>

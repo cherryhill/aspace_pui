@@ -85,6 +85,7 @@
 					<li><a href="#">Title</a></li>
 					<li><a href="#">Date added</a></li>
 					<li><a href="#">Date of material</a></li>
+					<li><a href="#">Identifier</a></li>
 					<li><a href="#">Anything else?</a></li>
 				</ul>
 		</p>
@@ -96,11 +97,11 @@
 			</ul>
 		</div>
 		<div class="medium-6 columns text-right">	
-			Display search results as:
+			Show only:
 			<ul class="button-group text-right">
-				<li><a href="02searchresults.html" class="button small fi-list-thumbnails disabled"> All items</a></li>
-				<li><a href="02searchresultstree.html" class="button small fi-page-multiple"> Collections</a></li>
-				<li><a href="02searchresultsgrid.html" class="button small fi-thumbnails"> Digital items</a></li>
+				<li data-tooltip aria-haspopup="true" class="has-tip" title="Displays all results, including collections, individual components, agents and subjects in a flat, sortable list."><a href="02searchresults.html" class="button small fi-list-thumbnails disabled"> All results</a></li>
+				<li data-tooltip aria-haspopup="true" class="has-tip" title="Only shows collections in a sortable list. An initial glance into collection contents is available, and search results can be further refined."><a href="02searchresultstree.html" class="button small fi-page-multiple"> Collections</a></li>
+				<li data-tooltip aria-haspopup="true" class="has-tip" title="Displays all results that have linked digital items available."><a href="02searchresultsgrid.html" class="button small fi-thumbnails"> Digital items</a></li>
 			</ul>
 		</div>
 	</div>
@@ -146,8 +147,8 @@
 
 			<div class="recordrow">
 				<div class="digitized"><i class="fi-photo large"></i><br /><a href="03record-object.html" class="button tiny">digitized material available</a></div>
-				<h3><a href="03record-object.html">Archival object <span class="searchterm1">Maria Mitchell</span> item title</a></h3>
-				<div class="recordtype"><span class="object"><i class="fi-book small"> </i> Archival object</span> &nbsp; | &nbsp; <strong>Identifier:</strong> ABCDEFGHIJKL</div>
+				<h3><a href="03record-object.html">Detailed record <span class="searchterm1">Maria Mitchell</span> item title</a></h3>
+				<div class="recordtype"><span class="object"><i class="fi-book small"> </i> Box 5 Folder 3</span> &nbsp; | &nbsp; <strong>Identifier:</strong> ABCDEFGHIJKL</div>
 				<div class="recordsummary">Maecenas faucibus mollis interdum. <span class="searchterm1">Maria Mitchell</span> sed diam eget risus varius blandit sit amet non magna. Vestibulum id ligula porta semper.</div>
 				<div class="recorddate"><strong>Date(s):</strong> c. 1943</div>
 				<div class="recordcontext"><strong>Context:</strong> <a href="#">Repository name</a> / <a href="#">Collection title</a> / <a href="#">Series 1: title</a> / <a href="#">Subseries 3C: title</a></div>
@@ -196,13 +197,10 @@
 			</ul>
 			<p class="panel callout">For WG: Mark suggested the effect that is demonstrated if you hover over pager 4. <strong>Note that this would only be in place for Title, Date Added and Date Modified sorts, not for the Relevance sort.</strong> For Brian: While this seems like a good suggestion, we are unsure of what would be required to program it, and so if the WG likes this suggestion, we look to you to let us know if it can be implemented in Phase 1, or if this is a later project.</p>
 			
+			<p class="panel callout"><strong>For developer:</strong> On displays that lists numerous records, the contents of the teaser text would be the abstract note field. In the absence of content in this field, it would be the initial 200-300 characters from the scope & contents note field. If both of these are empty, then it would inherit from the record above it in the hierarchy. If there is no data to display, then that field simply doesn't display.</p>
+
 			<p>&nbsp;</p>
 			
-			<div class="panel callout">
-				<h4>Additional questions for WG based on Jira Tickets</h4>
-				<p><strong><a href="https://archivesspace.atlassian.net/browse/AR-1293">AR-1293</a> - Sort Collections (Resources) on Staff and Public Interface by Identifier #:</strong> which ID is this ticket referring to? Is this a commonly desired element to include?</p>
-			</div>
-
 		</div>
 		
 <!-- / main content -->
@@ -275,7 +273,7 @@
 	<!-- last updated line -->
 	<div class="row">
 		<div class="small-12 panel callout columns text-right">
-			<p>Last updated 12/15/15</p>
+			<p>Last updated 12/16/15</p>
 		</div>
 	</div>
 	<!-- /last updated line -->
