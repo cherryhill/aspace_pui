@@ -69,10 +69,24 @@
 	<!-- page content section -->
 
 
+
 	<div class="row">
 		<p>&nbsp;</p>
-		
+
+
+		<ul class="tabs" data-tab>	
+			<li class="tab-title"><a href="#recorddetails">Record Details</a></li>
+			<li class="tab-title"><a href="#intellectual">Intellectual/hierarchical arrangement</a></li>
+			<li class="tab-title"><a href="#boxinventory">Numerical inventory</a></li>
+		</ul>
+
+		<div class="tabs-content">
+			<div class="content active" id="recorddetails">
+
+
 <!-- main content -->
+
+<!-- RECORD DETAILS -->
 
 		<div class="medium-8 columns">
 			<h2>Record item title</h2>
@@ -84,7 +98,8 @@
 				<li><a href="04landing-repository.html">Repository Title</a></li>
 				<li><a href="03record-collection.html">Collection Title</a></li>
 				<li><a href="#">Series 1: Title</a></li>
-				<li><a href="#">Subseries 3C: Title</a></li>
+				<li><a href="#">Subseries 2C: Title</a></li>
+				<li><a href="#">Subseries 7: Title</a></li>
 				<li class="unavailable"><a href="#">Record title</a> <i class="fi-info" data-tooltip aria-haspopup="true" class="has-tip" title="Sample of what this would contain from Cory Nimer: Perry Special Collections / Whitney (Newel Kimball) papers / Whitney family papers, 1817-1910 / Papers of Whitney family children, 1957 / Orson K. Whitney papers, 1851-1900"> </i></li>
 			</ul>			
 			
@@ -252,10 +267,12 @@
 
 			
 		</div>
+
 <!-- / main content -->
 
-<!-- sidebar -->
-		
+
+<!-- contents arrangement -->
+
 		<div class="medium-4 columns">
 			<div>
 				<ul class="small-block-grid-4">
@@ -265,7 +282,7 @@
 					<li class="text-center"><a href="#"  data-tooltip aria-haspopup="true" class="has-tip" title="Clicking this icon triggers the browser's print function."><i class="fi-print medium"></i><br />Print</a></li>
 				</ul>
 			</div><!-- helpful icons -->
-			
+
 			<div class="contentsarrangement optionc panel">
 				<h4>Contents & Arrangement</h4>
 				<div id="inventory" class="content">
@@ -282,7 +299,6 @@
 						</div>
 					</div> <!-- / c&a search -->
 					<ul class="no-bullet recordchildren">
-						<li>... <span class="treeitemdesc">see more</span> ...<i data-tooltip aria-haspopup="true" class="fi-info has-tip" title="While collections will show everything, detailed records will focus in on the records immediately surrounding it in the higherarchy: the series that the record is in, one above it and one after it. The SEE MORE links can either take the user to the collection's full contents and arrangement, or expand to show the user more items, depending on what Brian says he can develop most easily and what the WG prefers."> </i></li>
 						<li><i class="fi-plus"> &nbsp; </i><span class="recordtype folder"><i class="fi-folder small"> </i>Series 1 </span>Record title
 							<p class="treeitemdesc">&nbsp; Dates: 1890-1899</p>
 						</li>
@@ -298,24 +314,17 @@
 								<li><i class="fi-minus"> &nbsp; </i><span class="recordtype folder"><i class="fi-folder small"> </i>Subseries 2C </span>Record title (auto expanded to location of item)
 									<p class="treeitemdesc">&nbsp; Dates: 1906-1907</p>
 									<ul>
-										<li><span class="recordtype object"><i class="fi-book small"> </i></span>Another record
+										<li><span class="recordtype folder"><i class="fi-folder small"> </i>Subseries 5 </span>Another title
 											<p class="treeitemdesc">&nbsp; Dates: 1908</p>
-											<p class="treeitemdesc">&nbsp; Box 5 Folder 1</p>
 										</li>
-										<li><span class="recordtype object"><i class="fi-book small"> </i></span>Another record
+										<li><span class="recordtype folder"><i class="fi-folder small"> </i>Subseries 5 </span>And another title
 											<p class="treeitemdesc">&nbsp; Dates: 1908</p>
-											<p class="treeitemdesc">&nbsp; Box 5 Folder 2</p>
 										</li>
-										<li class="panel"><strong><span class="recordtype object"><i class="fi-book small"> </i></span>Current record title</strong>
+										<li class="panel"><strong><span class="recordtype folder"><i class="fi-folder small"> </i>Subseries 7 </span>Current record is within this title</strong>
 											<p class="treeitemdesc">&nbsp; Dates: 1910-1911</p>
-											<p class="treeitemdesc">&nbsp; Box 5 Folder 3</p>																</li>
-										<li><span class="recordtype object"><i class="fi-book small"> </i></span>Another record
-											<p class="treeitemdesc">&nbsp; Dates: 1910-1911</p>
-											<p class="treeitemdesc">&nbsp; Box 5 Folder 4</p>
 										</li>
-										<li><span class="recordtype object"><i class="fi-book small"> </i></span>Another record
-											<p class="treeitemdesc">&nbsp; Dates: 1910</p>
-											<p class="treeitemdesc">&nbsp; Box 5 Folder 5</p>
+										<li><span class="recordtype folder"><i class="fi-folder small"> </i>Subseries 8 </span>Another record
+											<p class="treeitemdesc">&nbsp; Dates: 1910-1911</p>
 										</li>
 									</ul>
 								</li>
@@ -324,23 +333,271 @@
 						<li><i class="fi-plus"> &nbsp; </i><span class="recordtype folder"><i class="fi-folder small"> </i>Series 3 </span>Record title three
 							<p class="treeitemdesc">&nbsp; Dates: 1810-1912</p>
 						</li>
-						<li>... <span class="treeitemdesc">see more</span> ...<i data-tooltip aria-haspopup="true" class="fi-info has-tip" title="While collections will show everything, detailed records will focus in on the records immediately surrounding it in the higherarchy: the series that the record is in, one above it and one after it. The SEE MORE links can either take the user to the collection's full contents and arrangement, or expand to show the user more items, depending on what Brian says he can develop most easily and what the WG prefers."> </i></li>
 					</ul>
+					<p><a href="#" class="button" data-tooltip aria-haspopup="true" class="has-tip" title="Clicking on this switches the user to the intellectual tab at the top.">Open full contents & arrangement on its own</a></p>					
 					<div class="panel callout">
-						<p>This goes on as long as it needs to for the collection.</p>
+						<p>This display focuses in on the item within the collection arrangement. It only goes three levels deep in the hierarchy, and only shows up to three items before and after the location of the item itself. The user must switch to the full contents and arrangement to get all of the details.</p>
 						<p>Each item <strong>links</strong> to the record.</p>
 						<p>This layout is largely based on the Princeton finding aids (<a href="http://findingaids.princeton.edu/collections/LAE035/c027">example</a>).</p>
 						<p>We explored <a href="03record-contentsarrangement.html"> other options</a> for the layout of Contents & Arrangement, and this is what the WG preferred.</p>
 					</div>
 				</div>
 			  </div><!-- / inventory -->
-
 		</div>
 
-<!-- / sidebar -->
+<!-- / contents arrangement -->
 
 
-	</div>
+<!-- /RECORD DETAILS -->
+			</div>
+			
+			<!-- INTELLECTUAL ARRANGEMENT --> 
+			<div class="content contentsarrangement optionc" id="intellectual">
+				<div class="row">
+					<div class="medium-8 columns">
+						<h2>Record item title</h2>
+						<div>
+							<span class="recordtype object"><i class="fi-book small"> </i>Box 5 Folder 3</span>  &nbsp; &nbsp; <strong>Identifier:</strong> ABCDE12345FGHI
+						</div><!-- / ID -->
+						<ul class="breadcrumbs">
+							<li class="current">Context:</li>
+							<li><a href="04landing-repository.html">Repository Title</a></li>
+							<li><a href="03record-collection.html">Collection Title</a></li>
+							<li><a href="#">Series 1: Title</a></li>
+							<li><a href="#">Subseries 2C: Title</a></li>
+							<li><a href="#">Subseries 7: Title</a></li>
+							<li class="unavailable"><a href="#">Record title</a> <i class="fi-info" data-tooltip aria-haspopup="true" class="has-tip" title="Sample of what this would contain from Cory Nimer: Perry Special Collections / Whitney (Newel Kimball) papers / Whitney family papers, 1817-1910 / Papers of Whitney family children, 1957 / Orson K. Whitney papers, 1851-1900"> </i></li>
+						</ul>			
+					</div>
+					<div class="medium-4 columns">
+						<div>
+							<ul class="small-block-grid-4">
+								<li class="text-center"><a href="#" data-reveal-id="citation-modal"><i class="fi-page-copy medium"></i><br />Citation</a></li>
+								<li class="text-center"><a href="#" data-reveal-id="bookmark-modal"><i class="fi-bookmark medium"></i><br />Bookmark</a></li>
+								<li class="text-center"><a href="#" data-reveal-id="request-modal"><i class="fi-telephone medium"></i><br />Request</a></li>
+								<li class="text-center"><a href="#"  data-tooltip aria-haspopup="true" class="has-tip" title="Clicking this icon triggers the browser's print function."><i class="fi-print medium"></i><br />Print</a></li>
+							</ul>
+						</div><!-- helpful icons -->
+					</div>	
+				</div>	
+				<div class="row">
+					<div class="large-12 columns">
+						<div class="row collapse">
+							<div class="small-8 columns">
+								<input type="text" placeholder="Search collection contents">
+							</div>
+							<div class="small-4 columns" data-tooltip aria-haspopup="true" class="has-tip" title="Patron can use this to refine what is listed in the inventory.">
+								<a href="#" class="button postfix">Search</a>
+							</div>
+						</div>
+					</div>
+				</div> <!-- / c&a search -->
+
+				<div id="inventory" class="content">
+					<ul class="no-bullet recordchildren">
+						<li><i class="fi-plus"> &nbsp; </i><span class="recordtype folder"><i class="fi-folder small"> </i>Series 1 </span>Record title which might be somewhat long
+							<p class="treeitemdesc">&nbsp; Dates: 1890-1899</p>
+						</li>
+						<li><i class="fi-minus"> &nbsp; </i><span class="recordtype folder"><i class="fi-folder small"> </i>Series 2 </span>Record title two (expanded by based on where user is in archive)
+									<p class="treeitemdesc">&nbsp; Dates: 1900-1912</p>
+							<ul>
+								<li><i class="fi-plus"> &nbsp; </i><span class="recordtype folder"><i class="fi-folder small"> </i>Subseries 2A</span> Record title which could also be very very long and this will demonstrate that these can get really long
+									<p class="treeitemdesc">&nbsp; Dates: 1901-1904</p>
+								</li>
+								<li><i class="fi-plus"> &nbsp; </i><span class="recordtype folder"><i class="fi-folder small"> </i>Subseries 2B</span> Record title
+									<p class="treeitemdesc">&nbsp; Dates: 1904-1905</p>
+								</li>
+								<li><i class="fi-minus"> &nbsp; </i><span class="recordtype folder"><i class="fi-folder small"> </i>Subseries 2C </span>Record title (expanded by based on where user is in archive)
+									<p class="treeitemdesc">&nbsp; Dates: 1906-1907</p>
+									<ul>
+										<li><span class="recordtype folder"><i class="fi-folder small"> </i>Subseries 5 </span>Another record title with a longer name
+											<p class="treeitemdesc">&nbsp; Dates: 1908</p>
+											<p class="treeitemdesc">&nbsp; Box 5 Folder 1</p>
+										</li>
+										<li><span class="recordtype folder"><i class="fi-folder small"> </i>Subseries 6 </span>Another record title with a longer name
+											<p class="treeitemdesc">&nbsp; Dates: 1908</p>
+											<p class="treeitemdesc">&nbsp; Box 5 Folder 2</p>
+										</li>
+										<li><span class="recordtype folder"><i class="fi-folder small"> </i>Subseries 7 </span>Another record title that is a little longer than the others
+											<p class="treeitemdesc">&nbsp; Dates: 1910-1911</p>
+											<p class="treeitemdesc">&nbsp; Box 5 Folder 3, and there may be other items in here</p>									
+											<ul>
+												<li><span class="recordtype object"><i class="fi-book small"> </i></span>Another record title with a longer name
+													<p class="treeitemdesc">&nbsp; Dates: 1908</p>
+													<p class="treeitemdesc">&nbsp; Box 5 Folder 1</p>
+												</li>
+												<li><span class="recordtype object"><i class="fi-book small"> </i></span>Another record title with a longer name
+													<p class="treeitemdesc">&nbsp; Dates: 1908</p>
+													<p class="treeitemdesc">&nbsp; Box 5 Folder 2</p>
+												</li>
+												<li class="panel"><span class="recordtype object"><i class="fi-book small"> </i></span>Another record title that is a little longer than the others
+													<p class="treeitemdesc">&nbsp; Dates: 1910-1911</p>
+													<p class="treeitemdesc">&nbsp; Box 5 Folder 3, and there may be other items in here</p>									
+												</li>
+											</ul>
+										</li>
+										<li><span class="recordtype folder"><i class="fi-folder small"> </i>Subseries 8 </span>Another record title with a longer name
+											<p class="treeitemdesc">&nbsp; Dates: 1908</p>
+											<p class="treeitemdesc">&nbsp; Box 5 Folder 2</p>
+										</li>
+									</ul>
+								</li>
+								<li><i class="fi-plus"> &nbsp; </i><span class="recordtype folder"><i class="fi-folder small"> </i>Subseries 2D</span> Record title which could also be very very long and this will demonstrate that these can get really long
+									<p class="treeitemdesc">&nbsp; Dates: 1901-1904</p>
+								</li>
+							</ul>
+						</li>
+						<li><i class="fi-plus"> &nbsp; </i><span class="recordtype folder"><i class="fi-folder small"> </i>Series 3 </span>And another record title, also on the longer side
+							<p class="treeitemdesc">&nbsp; Dates: 1810-1912</p>
+						</li>
+						<li><i class="fi-plus"> &nbsp; </i><span class="recordtype folder"><i class="fi-folder small"> </i>Series 4 </span>And another record title, also on the longer side
+							<p class="treeitemdesc">&nbsp; Dates: 1810-1912</p>
+						</li>
+						<li><i class="fi-plus"> &nbsp; </i><span class="recordtype folder"><i class="fi-folder small"> </i>Series 4 </span>And another record title, also on the longer side
+							<p class="treeitemdesc">&nbsp; Dates: 1810-1912</p>
+						</li>
+						<li><i class="fi-plus"> &nbsp; </i><span class="recordtype folder"><i class="fi-folder small"> </i>Series 5 </span>And another record title, also on the longer side
+							<p class="treeitemdesc">&nbsp; Dates: 1810-1912</p>
+						</li>
+						<li><i class="fi-plus"> &nbsp; </i><span class="recordtype folder"><i class="fi-folder small"> </i>Series 6 </span>And another record title, also on the longer side
+							<p class="treeitemdesc">&nbsp; Dates: 1810-1912</p>
+						</li>
+						<li><i class="fi-plus"> &nbsp; </i><span class="recordtype folder"><i class="fi-folder small"> </i>Series 7 </span>And another record title, also on the longer side
+							<p class="treeitemdesc">&nbsp; Dates: 1810-1912</p>
+						</li>
+						<li><i class="fi-plus"> &nbsp; </i><span class="recordtype folder"><i class="fi-folder small"> </i>Series 8 </span>And another record title, also on the longer side
+							<p class="treeitemdesc">&nbsp; Dates: 1810-1912</p>
+						</li>
+						<li><i class="fi-plus"> &nbsp; </i><span class="recordtype folder"><i class="fi-folder small"> </i>Series 9 </span>And another record title, also on the longer side
+							<p class="treeitemdesc">&nbsp; Dates: 1810-1912</p>
+						</li>
+						<li><i class="fi-plus"> &nbsp; </i><span class="recordtype folder"><i class="fi-folder small"> </i>Series 10 </span>And another record title, also on the longer side
+							<p class="treeitemdesc">&nbsp; Dates: 1810-1912</p>
+						</li>
+						<li><i class="fi-plus"> &nbsp; </i><span class="recordtype folder"><i class="fi-folder small"> </i>Series 11 </span>And another record title, also on the longer side
+							<p class="treeitemdesc">&nbsp; Dates: 1810-1912</p>
+						</li>
+						<li><i class="fi-plus"> &nbsp; </i><span class="recordtype folder"><i class="fi-folder small"> </i>Series 12 </span>And another record title, also on the longer side
+							<p class="treeitemdesc">&nbsp; Dates: 1810-1912</p>
+						</li>
+					</ul>
+					<div class="panel callout">
+						<p><strong>For Jungleen when designing:</strong> Please think farther down in the hierarchy than simply three levels. Example of the level of depth to consider: <a href="http://pui.archivesspace.org/repositories/10/archival_objects/21964">http://pui.archivesspace.org/repositories/10/archival_objects/21964</a> (from Mark Custer, feel free to ask him questions if you have them).</p>
+						<p>We are still working on the overview, which displays the contents and arrangement similar to this: <a href="http://archives.nypl.org/mss/18400#detailed">http://archives.nypl.org/mss/18400#detailed</a> (this may be more of a phase II item, to be discussed with Brad).</p>
+					</div>
+
+	</div>	
+			</div>
+			<!-- /INTELLECTUAL ARRANGEMENT --> 
+			<!-- INVENTORY ARRANGEMENT --> 
+			<div class="content contentsarrangement optionc" id="boxinventory">
+				<div class="row">
+					<div class="medium-8 columns">
+						<h2>Record item title</h2>
+						<div>
+							<span class="recordtype object"><i class="fi-book small"> </i>Box 5 Folder 3</span>  &nbsp; &nbsp; <strong>Identifier:</strong> ABCDE12345FGHI
+						</div><!-- / ID -->
+						<ul class="breadcrumbs">
+							<li class="current">Context:</li>
+							<li><a href="04landing-repository.html">Repository Title</a></li>
+							<li><a href="03record-collection.html">Collection Title</a></li>
+							<li><a href="#">Series 1: Title</a></li>
+							<li><a href="#">Subseries 2C: Title</a></li>
+							<li><a href="#">Subseries 7: Title</a></li>
+							<li class="unavailable"><a href="#">Record title</a> <i class="fi-info" data-tooltip aria-haspopup="true" class="has-tip" title="Sample of what this would contain from Cory Nimer: Perry Special Collections / Whitney (Newel Kimball) papers / Whitney family papers, 1817-1910 / Papers of Whitney family children, 1957 / Orson K. Whitney papers, 1851-1900"> </i></li>
+						</ul>			
+					</div>
+					<div class="medium-4 columns">
+						<div>
+							<ul class="small-block-grid-4">
+								<li class="text-center"><a href="#" data-reveal-id="citation-modal"><i class="fi-page-copy medium"></i><br />Citation</a></li>
+								<li class="text-center"><a href="#" data-reveal-id="bookmark-modal"><i class="fi-bookmark medium"></i><br />Bookmark</a></li>
+								<li class="text-center"><a href="#" data-reveal-id="request-modal"><i class="fi-telephone medium"></i><br />Request</a></li>
+								<li class="text-center"><a href="#"  data-tooltip aria-haspopup="true" class="has-tip" title="Clicking this icon triggers the browser's print function."><i class="fi-print medium"></i><br />Print</a></li>
+							</ul>
+						</div><!-- helpful icons -->
+					</div>	
+				</div>	
+				<div class="row">
+					<div class="large-12 columns">
+						<div class="row collapse">
+							<div class="small-8 columns">
+								<input type="text" placeholder="Search collection contents">
+							</div>
+							<div class="small-4 columns" data-tooltip aria-haspopup="true" class="has-tip" title="Patron can use this to refine what is listed in the inventory.">
+								<a href="#" class="button postfix">Search</a>
+							</div>
+						</div>
+					</div>
+				</div> <!-- / c&a search -->
+				<div>
+					<ul class="no-bullet recordchildren">
+						<li><span class="recordtype object"><i class="fi-book small"> </i> Box 1 Folder 1</span> Another record 
+							<p class="treeitemdesc">&nbsp; Dates: 1910-1911</p>
+							<p class="treeitemdesc">&nbsp; Any additional instance information set to display</p>									
+
+						</li>
+						<li><span class="recordtype object"><i class="fi-book small"> </i> Box 1 Folder 2</span> Another record 
+							<p class="treeitemdesc">&nbsp; Dates: 1910-1911</p>
+							<p class="treeitemdesc">&nbsp; Any additional instance information set to display</p>									
+
+						</li>
+						<li><span class="recordtype object"><i class="fi-book small"> </i> Box 1 Folder 3</span> Another record 
+							<p class="treeitemdesc">&nbsp; Dates: 1910-1911</p>
+							<p class="treeitemdesc">&nbsp; Any additional instance information set to display</p>									
+
+						</li>
+						<li><span class="recordtype object"><i class="fi-book small"> </i> Box 2 Folder 1</span> Another record 
+							<p class="treeitemdesc">&nbsp; Dates: 1910-1911</p>
+							<p class="treeitemdesc">&nbsp; Any additional instance information set to display</p>									
+
+						</li>
+						<li><span class="recordtype object"><i class="fi-book small"> </i> Box 2 Folder 2</span> Another record 
+							<p class="treeitemdesc">&nbsp; Dates: 1910-1911</p>
+							<p class="treeitemdesc">&nbsp; Any additional instance information set to display</p>									
+
+						</li>
+						<li><span class="recordtype object"><i class="fi-book small"> </i> Box 3 Folder 1</span> Another record 
+							<p class="treeitemdesc">&nbsp; Dates: 1910-1911</p>
+							<p class="treeitemdesc">&nbsp; Any additional instance information set to display</p>									
+
+						</li>
+						<li><span class="recordtype object"><i class="fi-book small"> </i> Box 4 Folder 1</span> Another record 
+							<p class="treeitemdesc">&nbsp; Dates: 1910-1911</p>
+							<p class="treeitemdesc">&nbsp; Any additional instance information set to display</p>									
+
+						</li>
+						<li><span class="recordtype object"><i class="fi-book small"> </i> Box 5 Folder 1</span> Another record 
+							<p class="treeitemdesc">&nbsp; Dates: 1910-1911</p>
+							<p class="treeitemdesc">&nbsp; Any additional instance information set to display</p>									
+
+						</li>
+						<li><span class="recordtype object"><i class="fi-book small"> </i> Box 5 Folder 2</span> Another record 
+							<p class="treeitemdesc">&nbsp; Dates: 1910-1911</p>
+							<p class="treeitemdesc">&nbsp; Any additional instance information set to display</p>									
+
+						</li>
+						<li class="panel"><span class="recordtype object"><i class="fi-book small"> </i> Box 5 Folder 3</span> Another record 
+							<p class="treeitemdesc">&nbsp; Dates: 1910-1911</p>
+							<p class="treeitemdesc">&nbsp; Any additional instance information set to display</p>									
+
+						</li>
+						<li><span class="recordtype object"><i class="fi-book small"> </i> Box 5 Folder 4</span> Another record 
+							<p class="treeitemdesc">&nbsp; Dates: 1910-1911</p>
+							<p class="treeitemdesc">&nbsp; Any additional instance information set to display</p>									
+
+						</li>
+						<li>Etc.</li>
+					</ul>
+					
+					<div class="panel callout">
+						<p>This is meant to address <strong><a href="https://archivesspace.atlassian.net/browse/AR-838">AR-838</a> - As an archivist, I would like the option to see a multi-level description in either the intellectual (level) or physical (container) arrangement.</strong></p>
+					</div>
+				</div>
+			</div>	
+			<!-- /INVENTORY ARRANGEMENT --> 
+		</div>
+
 
 	<!-- /page content section -->
 
