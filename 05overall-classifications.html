@@ -116,13 +116,22 @@
 
 		<div class="medium-12 columns">
 			<div class="row">
-				<div class="medium-8 columns">
+				<div class="medium-5 columns">
 					<h2>Record Groups</h2>
 				</div>
+				<div class="medium-3 columns">
+					Restrict to repository: <button href="#" data-dropdown="reporestrict" aria-controls="reporestrict" aria-expanded="false" class="button dropdown tiny">All Repositories</button><br>
+							<ul id="reporestrict" data-dropdown-content class="f-dropdown" aria-hidden="true">
+								<li><a href="#">Repository Name 1</a></li>
+								<li><a href="#">Repository Name 2</a></li>
+								<li><a href="#">Repository Name 3</a></li>
+							</ul>
+						</p>
+				</div>
 				<div class="medium-2 columns">
-					Sort by: <button href="#" data-dropdown="relevance" aria-controls="relevance" aria-expanded="false" class="button dropdown tiny">Title</button><br>
+					Sort by: <button href="#" data-dropdown="relevance" aria-controls="relevance" aria-expanded="false" class="button dropdown tiny">Sequential</button><br>
 							<ul id="relevance" data-dropdown-content class="f-dropdown" aria-hidden="true">
-								<li><a href="#">Date added</a></li>
+								<li><a href="#">Title</a></li>
 								<li><a href="#">Newest material</a></li>
 								<li><a href="#">Identifier</a></li>
 								<li><a href="#">Anything else?</a></li>
@@ -140,62 +149,147 @@
 				</div>
 			</div>
 			
-			<div class="panel row">
+			<div class="row">
 				<div class="medium-12 columns">
-					<h3><a href="04landing-classification.html">Record group name</a></h3>
+					<h3><a href="04landing-classification.html">01 Record group name</a></h3>
 					<p>
 						<strong>Identifier:</strong> ABCDE12345FGHI<br />
 						Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus...<br />
 						<strong>Creator:</strong> <a href="03record-object.html">Linked record</a><br />
-						<strong>Number of collections:</strong> 20				
+						<strong>Repository:</strong> <a href="04landing-repository.html">Repository Name</a><br />
+						<div class="contents">
+							<dl class="accordion" data-accordion>
+								<dd class="accordion-navigation">
+									<a href="#panelcontents"><i class="fi-plus"> </i>Subrecords and subgroups &raquo;</a>
+									<div id="panelcontents" class="content">
+										<ul class="no-bullet recordchildren">
+											<li><i class="fi-plus"> </i><span class="recordtype classification"><i class="fi-annotate small"> </i> RG 01.01</span> Record group title</li>
+											<li><i class="fi-minus"> </i><span class="recordtype classification"><i class="fi-annotate small"> </i> RG 01.02</span> Record group title two</li>
+											<li> <span class="recordtype object"><i class="fi-book small"> </i>Box 2 Folder 2 </span>Record title three no sub items <br /><span class="treeitemdesc">Dates: date info here</li>
+											<li> <span class="recordtype object"><i class="fi-book small"> </i>Box 2 Folder 3 </span>Record title four no sub items <br /><span class="treeitemdesc">Dates: date info here</li>
+											<li> <span class="recordtype object"><i class="fi-book small"> </i>Box 3 Folder 1 </span>Record title five no sub items <br /><span class="treeitemdesc">Dates: date info here</li>											
+											<li><i class="fi-plus"> </i><span class="recordtype classification"><i class="fi-annotate small"> </i> RG 01.03</span> Record group title three</li>
+										</ul>
+									</div>
+								</dd>
+							</dl>
+						</div>
 					</p>
 				</div>
 			</div>
 			<p>&nbsp;</p>
-			<div class="panel row">
+			<div class="row">
 				<div class="medium-12 columns">
-					<h3><a href="04landing-classification.html">Record group name</a></h3>
+					<h3><a href="04landing-classification.html">02 Record group name</a></h3>
 					<p>
 						<strong>Identifier:</strong> ABCDE12345FGHI<br />
 						Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus...<br />
 						<strong>Creator:</strong> <a href="03record-object.html">Linked record</a><br />
-						<strong>Number of collections:</strong> 20				
+						<strong>Repository:</strong> <a href="04landing-repository.html">Repository Name</a><br />
+						<div class="contents">
+							<dl class="accordion" data-accordion>
+								<dd class="accordion-navigation">
+									<a href="#panelcontents2"><i class="fi-plus"> </i>Subrecords and subgroups &raquo;</a>
+									<div id="panelcontents2" class="content">
+										<ul class="no-bullet recordchildren">
+											<li><i class="fi-plus"> </i><span class="recordtype classification"><i class="fi-annotate small"> </i> RG 02.01</span> Record group title</li>
+											<li><i class="fi-minus"> </i><span class="recordtype classification"><i class="fi-annotate small"> </i> RG 02.02</span> Record group title two</li>
+											<li> <span class="recordtype object"><i class="fi-book small"> </i>Box 2 Folder 2 </span>Record title three no sub items <br /><span class="treeitemdesc">Dates: date info here</li>
+											<li> <span class="recordtype object"><i class="fi-book small"> </i>Box 2 Folder 3 </span>Record title four no sub items <br /><span class="treeitemdesc">Dates: date info here</li>
+											<li> <span class="recordtype object"><i class="fi-book small"> </i>Box 3 Folder 1 </span>Record title five no sub items <br /><span class="treeitemdesc">Dates: date info here</li>											
+											<li><i class="fi-plus"> </i><span class="recordtype classification"><i class="fi-annotate small"> </i> RG 02.03</span> Record group title three</li>
+										</ul>
+									</div>
+								</dd>
+							</dl>
+						</div>
 					</p>
 				</div>
 			</div>
 			<p>&nbsp;</p>
-			<div class="panel row">
+			<div class="row">
 				<div class="medium-12 columns">
-					<h3><a href="04landing-classification.html">Record group name</a></h3>
+					<h3><a href="04landing-classification.html">03 Record group name</a></h3>
 					<p>
 						<strong>Identifier:</strong> ABCDE12345FGHI<br />
 						Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus...<br />
 						<strong>Creator:</strong> <a href="03record-object.html">Linked record</a><br />
-						<strong>Number of collections:</strong> 20				
+						<strong>Repository:</strong> <a href="04landing-repository.html">Repository Name</a><br />
+						<div class="contents">
+							<dl class="accordion" data-accordion>
+								<dd class="accordion-navigation">
+									<a href="#panelcontents3"><i class="fi-plus"> </i>Subrecords and subgroups &raquo;</a>
+									<div id="panelcontents3" class="content">
+										<ul class="no-bullet recordchildren">
+											<li><i class="fi-plus"> </i><span class="recordtype classification"><i class="fi-annotate small"> </i> RG 03.01</span> Record group title</li>
+											<li><i class="fi-minus"> </i><span class="recordtype classification"><i class="fi-annotate small"> </i> RG 03.02</span> Record group title two</li>
+											<li> <span class="recordtype object"><i class="fi-book small"> </i>Box 2 Folder 2 </span>Record title three no sub items <br /><span class="treeitemdesc">Dates: date info here</li>
+											<li> <span class="recordtype object"><i class="fi-book small"> </i>Box 2 Folder 3 </span>Record title four no sub items <br /><span class="treeitemdesc">Dates: date info here</li>
+											<li> <span class="recordtype object"><i class="fi-book small"> </i>Box 3 Folder 1 </span>Record title five no sub items <br /><span class="treeitemdesc">Dates: date info here</li>											
+											<li><i class="fi-plus"> </i><span class="recordtype classification"><i class="fi-annotate small"> </i> RG 03.03</span> Record group title three</li>
+										</ul>
+									</div>
+								</dd>
+							</dl>
+						</div>
 					</p>
 				</div>
 			</div>
 			<p>&nbsp;</p>
-			<div class="panel row">
+			<div class="row">
 				<div class="medium-12 columns">
-					<h3><a href="04landing-classification.html">Record group name</a></h3>
+					<h3><a href="04landing-classification.html">04 Record group name</a></h3>
 					<p>
 						<strong>Identifier:</strong> ABCDE12345FGHI<br />
 						Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus...<br />
 						<strong>Creator:</strong> <a href="03record-object.html">Linked record</a><br />
-						<strong>Number of collections:</strong> 20				
+						<strong>Repository:</strong> <a href="04landing-repository.html">Repository Name</a><br />
+						<div class="contents">
+							<dl class="accordion" data-accordion>
+								<dd class="accordion-navigation">
+									<a href="#panelcontents4"><i class="fi-plus"> </i>Subrecords and subgroups &raquo;</a>
+									<div id="panelcontents4" class="content">
+										<ul class="no-bullet recordchildren">
+											<li><i class="fi-plus"> </i><span class="recordtype classification"><i class="fi-annotate small"> </i> RG 04.01</span> Record group title</li>
+											<li><i class="fi-minus"> </i><span class="recordtype classification"><i class="fi-annotate small"> </i> RG 04.02</span> Record group title two</li>
+											<li> <span class="recordtype object"><i class="fi-book small"> </i>Box 2 Folder 2 </span>Record title three no sub items <br /><span class="treeitemdesc">Dates: date info here</li>
+											<li> <span class="recordtype object"><i class="fi-book small"> </i>Box 2 Folder 3 </span>Record title four no sub items <br /><span class="treeitemdesc">Dates: date info here</li>
+											<li> <span class="recordtype object"><i class="fi-book small"> </i>Box 3 Folder 1 </span>Record title five no sub items <br /><span class="treeitemdesc">Dates: date info here</li>											
+											<li><i class="fi-plus"> </i><span class="recordtype classification"><i class="fi-annotate small"> </i> RG 04.03</span> Record group title three</li>
+										</ul>
+									</div>
+								</dd>
+							</dl>
+						</div>
 					</p>
 				</div>
 			</div>
 			<p>&nbsp;</p>
-			<div class="panel row">
+			<div class="row">
 				<div class="medium-12 columns">
-					<h3><a href="04landing-classification.html">Record group name</a></h3>
+					<h3><a href="04landing-classification.html">05 Record group name</a></h3>
 					<p>
 						<strong>Identifier:</strong> ABCDE12345FGHI<br />
 						Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus...<br />
 						<strong>Creator:</strong> <a href="03record-object.html">Linked record</a><br />
-						<strong>Number of collections:</strong> 20				
+						<strong>Repository:</strong> <a href="04landing-repository.html">Repository Name</a><br />
+						<div class="contents">
+							<dl class="accordion" data-accordion>
+								<dd class="accordion-navigation">
+									<a href="#panelcontents5"><i class="fi-plus"> </i>Subrecords and subgroups &raquo;</a>
+									<div id="panelcontents5" class="content">
+										<ul class="no-bullet recordchildren">
+											<li><i class="fi-plus"> </i><span class="recordtype classification"><i class="fi-annotate small"> </i> RG 05.01</span> Record group title</li>
+											<li><i class="fi-minus"> </i><span class="recordtype classification"><i class="fi-annotate small"> </i> RG 05.02</span> Record group title two</li>
+											<li> <span class="recordtype object"><i class="fi-book small"> </i>Box 2 Folder 2 </span>Record title three no sub items <br /><span class="treeitemdesc">Dates: date info here</li>
+											<li> <span class="recordtype object"><i class="fi-book small"> </i>Box 2 Folder 3 </span>Record title four no sub items <br /><span class="treeitemdesc">Dates: date info here</li>
+											<li> <span class="recordtype object"><i class="fi-book small"> </i>Box 3 Folder 1 </span>Record title five no sub items <br /><span class="treeitemdesc">Dates: date info here</li>											
+											<li><i class="fi-plus"> </i><span class="recordtype classification"><i class="fi-annotate small"> </i> RG 05.03</span> Record group title three</li>
+										</ul>
+									</div>
+								</dd>
+							</dl>
+						</div>
 					</p>
 				</div>
 			</div>
@@ -213,6 +307,8 @@
 			</ul>
 			<p class="panel callout">For WG: Mark suggested the effect that is demonstrated if you hover over pager 4. For Brian: While this seems like a good suggestion, we are unsure of what would be required to program it, and so if the WG likes this suggestion, we look to you to let us know if it can be implemented in Phase 1, or if this is a later project.</p>
 
+			<p class="panel callout">For developer: record group numbering schemes can be represented however they are represented in that repository. We used the scheme from one of the examples provided for us. Our understanding is that it may vary per repository.</p>
+			
 		</div>
 
 <!-- / main content -->
@@ -231,7 +327,7 @@
 	<!-- last updated line -->
 	<div class="row">
 		<div class="small-12 panel callout columns text-right">
-			<p>Last updated 12/16/15</p>
+			<p>Last updated 12/17/15</p>
 		</div>
 	</div>
 	<!-- /last updated line -->

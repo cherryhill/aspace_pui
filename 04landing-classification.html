@@ -75,18 +75,20 @@
 <!-- main content -->
 
 		<div class="medium-9 columns">
-			<h2>Record group title</h2>
+			<h2>04 Record group title</h2>
 			<div>
 				<span class="recordtype classification"><i class="fi-annotate small"> </i> Record group</span> &nbsp; &nbsp; <strong>Identifier:</strong> ABCDE12345FGHI
 			</div><!-- / ID -->
 			<ul class="breadcrumbs">
 				<li class="current">Context:</li>
-				<li class="unavailable"><a href="04landing-repository.html">Record group</a> ? Should context actually be included here?</li>
+				<li><a href="04landing-repository.html">Repository Name</a></li>
+				<li class="unavailable"><a href="04landing-repository.html">Record group</a></li>
 			</ul>			
 			
 			<div class="recordsummary">
 				<p>Contents of the biography/historical note field. Nullam id dolor id nibh ultricies vehicula ut id elit. Donec id elit non mi porta gravida at eget metus. Cras justo odio, dapibus ac facilisis in, egestas eget quam...<br /> ... <span class="seemorelink">see more</span> ... <i class="fi-info has-tip" data-tooltip aria-haspopup="true" title="Show the first 300 or so characters, then use a see more link to expand the description."> </i></p>
-				<p><strong>Creator:</strong> <a href="#">Linked record</a></p>
+				<p><strong>Creator:</strong> <a href="04landing-agent.html">Linked record</a></p>
+				<p><strong>Repository:</strong> <a href="04landing-repository.html">Repository name</a></p>
 			</div>
 
 
@@ -209,8 +211,16 @@
 <!-- sidebar -->
 		
 		<div class="medium-3 columns panel facets">
-			<h3>More about Record group</h3>
-			<p>From what we can tell in pui-staff, there is nothing from this sidebar. If nothing goes here, then this sidebar shouldn't display at all.</p>
+			<h3>Subgroups of this Record Group</h3>
+			<p><strong>Note for developer: if there are no subgroups, this would not display.</strong></p>
+										<ul class="no-bullet recordchildren">
+											<li><i class="fi-plus"> </i><span class="recordtype classification"><i class="fi-annotate small"> </i> RG 04.01</span> Record group title</li>
+											<li><i class="fi-minus"> </i><span class="recordtype classification"><i class="fi-annotate small"> </i> RG 04.02</span> Record group title two</li>
+											<li> <span class="recordtype object"><i class="fi-book small"> </i>Box 2 Folder 2 </span>Record title three no sub items <br /><span class="treeitemdesc">Dates: date info here</li>
+											<li> <span class="recordtype object"><i class="fi-book small"> </i>Box 2 Folder 3 </span>Record title four no sub items <br /><span class="treeitemdesc">Dates: date info here</li>
+											<li> <span class="recordtype object"><i class="fi-book small"> </i>Box 3 Folder 1 </span>Record title five no sub items <br /><span class="treeitemdesc">Dates: date info here</li>											
+											<li><i class="fi-plus"> </i><span class="recordtype classification"><i class="fi-annotate small"> </i> RG 04.03</span> Record group title three</li>
+										</ul>
 		</div>
 
 <!-- / sidebar -->

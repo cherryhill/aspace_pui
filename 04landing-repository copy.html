@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ASpace PUI Wireframes | Landing Display - Agent</title>
+    <title>ASpace PUI Wireframes | Landing Display - Repository</title>
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/foundation-icons.css" />
     <link rel="stylesheet" href="css/aspace.css" />
@@ -19,8 +19,8 @@
     </div>
     <div class="row panel callout">
     	<div class="medium-6 large-6 columns">
-    		<h3>Landing Display - Agent</h3>
-    		<p>This page represents what an agent landing display looks like (with all data possible).
+    		<h3>Landing Display - Repository</h3>
+    		<p>This page represents what a repository landing display looks like (with all data possible).
     	</div>
  		<div class="medium-6 large-6 medium-text-right columns">
  			<a href="index.html" class="button">Back to Table of Contents</a>
@@ -75,24 +75,37 @@
 <!-- main content -->
 
 		<div class="medium-9 columns">
-			<h2>Agent name</h2>
+			<h2>Repository name</h2>
 			<div>
-				<span class="recordtype person"><i class="fi-address-book small"> </i> Person <i class="fi-info has-tip" data-tooltip aria-haspopup="true" title="Other Agent Roles -- Corporate entity, Family, Software -- should use same color but different icons."> </i></span> &nbsp; &nbsp; <strong>Identifier:</strong> ABCDE12345FGHI
+				<span class="recordtype repository"><i class="fi-home small"> </i> Repository</span> &nbsp; &nbsp; <strong>Identifier:</strong> ABCDE12345FGHI
 			</div><!-- / ID -->
 			<ul class="breadcrumbs">
 				<li class="current">Context:</li>
-				<li class="unavailable"><a href="04landing-repository.html">Agent name</a></li>
+				<li class="unavailable"><a href="04landing-repository.html">Repository name</a></li>
 			</ul>			
 			
 			<div class="recordsummary">
-				<p>Contents of the biography/historical note field. Nullam id dolor id nibh ultricies vehicula ut id elit. Donec id elit non mi porta gravida at eget metus. Cras justo odio, dapibus ac facilisis in, egestas eget quam...<br /> ... <span class="seemorelink">see more</span> ... <i class="fi-info has-tip" data-tooltip aria-haspopup="true" title="Show the first 300 or so characters, then use a see more link to expand the description."> </i></p>
-				<p><strong>Dates:</strong> 1903 - 1989</p>
-			</div>
+				<p>Contents of the abstract field. Nullam id dolor id nibh ultricies vehicula ut id elit. Donec id elit non mi porta gravida at eget metus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. <i data-tooltip aria-haspopup="true" class="fi-info has-tip" title="There is no field in the repository form for a description right now, so this would be new."> </i></p>
+				<p><strong>Contact:</strong> contact info goes here, freeform set up in repository.</p>
+				<p><strong>Location:</strong> location info here.</p>
+				<p><strong>Opening Hours:</strong> 8:00am - 10:00pm</p>
 
+				<div>
+					<h3>What's in this repository?</h3>
+					<ul class="small-block-grid-5">
+						<li class="recordtype collection"><i class="fi-clipboard large"> </i><br />103 Collections</li>
+						<li class="recordtype object"><i class="fi-book large"> </i><br />80,001 Records</li>
+						<li class="recordtype person"><i class="fi-address-book large"> </i><br />2,345 People</li>
+						<li class="recordtype subject"><i class="fi-price-tag large"> </i><br />7,456 Subjects</li>
+						<li class="recordtype classification"><i class="fi-annotate large"> </i><br />5 Record groups</li>
+					</ul>
+				</div>
+
+			</div>
 
 	<!-- search -->
 	<div class="row">
-		<h3>Related collections</h3>
+		<h3>Search this repository</h3>
 		
 		<div class="medium-4 columns">
 			<form>
@@ -132,22 +145,12 @@
 	</div>	
 	<!-- / search -->
 
-			<div class="recordrow panel">
+			<div class="recordrow">
 				<h3><a href="03record-collection.html">Collection item title</a></h3>
 				<div class="recordtype collection"><i class="fi-clipboard small"> </i> Collection</div>
 				<div class="recordsummary">Maecenas faucibus mollis astronomy. Maecenas sed diam eget risus varius blandit sit amet non magna. Vestibulum id ligula porta semper.</div>
 				<div class="recorddate"><strong>Date(s):</strong> 1903-1943</div>
 				<div class="recordid"><strong>Identifier:</strong> ABCDEFGHIJKL</div>
-				<div class="agenttype"><strong>Agent Role:</strong> Photographer</div>
-			</div>
-
-			<div class="recordrow panel">
-				<h3><a href="03record-collection.html">Collection item title</a></h3>
-				<div class="recordtype collection"><i class="fi-clipboard small"> </i> Collection</div>
-				<div class="recordsummary">Maecenas faucibus mollis astronomy. Maecenas sed diam eget risus varius blandit sit amet non magna. Vestibulum id ligula porta semper.</div>
-				<div class="recorddate"><strong>Date(s):</strong> 1903-1943</div>
-				<div class="recordid"><strong>Identifier:</strong> ABCDEFGHIJKL</div>
-				<div class="agenttype"><strong>Agent Role:</strong> Photographer</div>
 			</div>
 
 			<div class="recordrow">
@@ -156,7 +159,6 @@
 				<div class="recordsummary">Maecenas faucibus mollis astronomy. Maecenas sed diam eget risus varius blandit sit amet non magna. Vestibulum id ligula porta semper.</div>
 				<div class="recorddate"><strong>Date(s):</strong> 1903-1943</div>
 				<div class="recordid"><strong>Identifier:</strong> ABCDEFGHIJKL</div>
-				<div class="agenttype"><strong>Agent Role:</strong> Contributor</div>
 			</div>
 
 			<div class="recordrow">
@@ -165,7 +167,6 @@
 				<div class="recordsummary">Maecenas faucibus mollis astronomy. Maecenas sed diam eget risus varius blandit sit amet non magna. Vestibulum id ligula porta semper.</div>
 				<div class="recorddate"><strong>Date(s):</strong> 1903-1943</div>
 				<div class="recordid"><strong>Identifier:</strong> ABCDEFGHIJKL</div>
-				<div class="agenttype"><strong>Agent Role:</strong> Contributor</div>
 			</div>
 
 			<div class="recordrow">
@@ -174,7 +175,6 @@
 				<div class="recordsummary">Maecenas faucibus mollis astronomy. Maecenas sed diam eget risus varius blandit sit amet non magna. Vestibulum id ligula porta semper.</div>
 				<div class="recorddate"><strong>Date(s):</strong> 1903-1943</div>
 				<div class="recordid"><strong>Identifier:</strong> ABCDEFGHIJKL</div>
-				<div class="agenttype"><strong>Agent Role:</strong> Contributor</div>
 			</div>
 
 			<div class="recordrow">
@@ -183,7 +183,6 @@
 				<div class="recordsummary">Maecenas faucibus mollis astronomy. Maecenas sed diam eget risus varius blandit sit amet non magna. Vestibulum id ligula porta semper.</div>
 				<div class="recorddate"><strong>Date(s):</strong> 1903-1943</div>
 				<div class="recordid"><strong>Identifier:</strong> ABCDEFGHIJKL</div>
-				<div class="agenttype"><strong>Agent Role:</strong> Contributor</div>
 			</div>
 
 			<div class="recordrow">
@@ -192,7 +191,14 @@
 				<div class="recordsummary">Maecenas faucibus mollis astronomy. Maecenas sed diam eget risus varius blandit sit amet non magna. Vestibulum id ligula porta semper.</div>
 				<div class="recorddate"><strong>Date(s):</strong> 1903-1943</div>
 				<div class="recordid"><strong>Identifier:</strong> ABCDEFGHIJKL</div>
-				<div class="agenttype"><strong>Agent Role:</strong> Contributor</div>
+			</div>
+
+			<div class="recordrow">
+				<h3><a href="03record-collection.html">Collection item title</a></h3>
+				<div class="recordtype collection"><i class="fi-clipboard small"> </i> Collection</div>
+				<div class="recordsummary">Maecenas faucibus mollis astronomy. Maecenas sed diam eget risus varius blandit sit amet non magna. Vestibulum id ligula porta semper.</div>
+				<div class="recorddate"><strong>Date(s):</strong> 1903-1943</div>
+				<div class="recordid"><strong>Identifier:</strong> ABCDEFGHIJKL</div>
 			</div>
 
 			<ul class="pagination" role="menubar" aria-label="Pagination">
@@ -208,6 +214,7 @@
 			</ul>
 
 
+				<p class="panel callout">Opening hours is a new field that is not in the staff UI, but was requested by WG. Some people don't want it, though, so if it is empty, it should not display at all.</p>
 
 		</div>
 
@@ -215,59 +222,40 @@
 
 <!-- sidebar -->
 		
-		<div class="medium-3 columns panel facets">
-			<h3>More about Name</h3>
-			<dl class="accordion" data-accordion>
-			  <dd class="accordion-navigation">
-			    <a href="#nameforms"><i class="fi-plus"> </i> Name Forms &raquo;</a>
-			    <div id="nameforms" class="content">
-					<p>Also known by the following names:</p>
-					<ul>
-						<li>Another variant of name (Dates: 1922-1934)</li>
-						<li>Another variant of name (Dates: 1944)</li>
-						<li>Another variant of name (Dates: 1950-)</li>
-					</ul>
-			    </div>
-			  </dd><!-- / nameforms -->
-			  <dd class="accordion-navigation">
-			    <a href="#objectagentlinks"><i class="fi-plus"> </i>Related People and Organizations &raquo;</a>
-			    <div id="objectagentlinks" class="content">
-					<div class="row">
-						<div class="medium-12 columns">
-					    	<h4>Associative Relationship</h4>
-					    	<ul>
-					    		<li><a href="">Last name, First name, 1903-1978</a> (author, person)</li>
-					    		<li><a href="">Last name, First name, 1951-</a> (photographer, person)</a></li>
-					    	</ul>
-					    	<h4>Subordinate/Superior Relationship</h4>
-					    	<ul>
-					    		<li><a href="">Company name, 1971-</a> (contributor, corporate body)</a></li>
-					    	</ul>
-						</div>
-					</div>
-			    </div>
-			  </dd><!-- / agent links -->
-			  <dd class="accordion-navigation">
-			    <a href="#externaldocs"><i class="fi-plus"> </i>External Documents &raquo;</a>
-			    <div id="externaldocs" class="content">
-			    	<ul>
-			    		<li><a href="#">Document name, format, size</a></li>
-			    		<li><a href="#">Document name, format, size</a></li>
-			    	</ul>
-			    </div>
-			  </dd><!-- / external documents -->
-			  <dd class="accordion-navigation">
-			    <a href="#rightstatement"><i class="fi-plus"> </i>Rights Statement &raquo;</a>
-			    <div id="rightstatement" class="content">
-			    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-			    </div>
-			  </dd><!-- / rights statement -->
-			</dl>
-
+		<div class="medium-3 columns panel facetgroup">
+				<div>
+					<img src="img/wood.jpg" alt="sample featured collection image" title="photo by Rain Michaels cc-sa-nc-by" />
+					<p>Repository branding image, brought in from URL field.</p>
+				</div>
+			<h2>Filter content</h2>
+			<h3 data-tooltip aria-haspopup="true" class="has-tip" title="This filter narrow the results down based on the date the original object was created, authored, or otherwise came into existence. They do not correlate to when the record itself was created. Date searches may not be all inclusive because some dates are too vague to be machine readable. Those records cannot be caught by this filter.">Dates to include <i class="fi-info"></i></h3>
 			<div>
-				<p class="panel callout">Per suggestion from Scott Schwartz, records where the agent is a creator will display as featured prioritized before other records (and Agent Role is now the default sort for this display, followed by title). For this display only, Agent Role has been added to each collection listing.</p>
+				<form>
+					<input type="text" placeholder="Start year"> to
+					<input type="text" placeholder="End year">
+					<a href="#" class="button postfix">Filter</a>
+				</form>
 			</div>
-
+			<h3 data-tooltip aria-haspopup="true" class="has-tip" title="Following are additional filters available based on your current search parameters. These options will narrow your results down to each specific category.">Additional filters <i class="fi-info"></i></h3>
+			<span class="smalltext">Sort filters by:</span>
+			<ul class="button-group">
+				<li><a href="#" class="button tiny disabled"># of records</a></li>
+				<li><a href="#" class="button tiny">Alphabetically</a></li>
+			</ul>
+			<div class="facets">
+				<span class="definition"># of records</span>
+				<h5>Subjects</h5>
+				<ul class="side-nav">
+					<li><a href="#">Art critics <span class="recordnumber">15</span></a></li>
+					<li><a href="#">Blacklisting <span class="recordnumber">3</span></a></li>
+				</ul>
+				<span class="definition"># of records</span>
+				<h5>Category 3</h5>
+				<ul class="side-nav">
+					<li><a href="#">This will go on <span class="recordnumber">44</span></a></li>
+					<li><a href="#">As long as it needs to <span class="recordnumber">23</span></a></li>
+				</ul>
+			</div>
 		</div>
 
 <!-- / sidebar -->
@@ -287,7 +275,7 @@
 	<!-- last updated line -->
 	<div class="row">
 		<div class="small-12 panel callout columns text-right">
-			<p>Last updated 12/15/15</p>
+			<p>Last updated 12/17/15</p>
 		</div>
 	</div>
 	<!-- /last updated line -->
