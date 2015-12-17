@@ -156,6 +156,11 @@ i.giant {
 		float:right;
 		margin: 0 0 1em 1em;
 }
+.objectimage.repolanding {
+		width: 30%;
+		float:right;
+		margin: 0 0 1em 1em;
+}
 .featured {
 	width: 35%;
 	margin: 0 0 0.5em 0.5em;
